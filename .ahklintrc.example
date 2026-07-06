@@ -1,0 +1,14 @@
+[checks]
+v1_syntax = "error"
+style = "warning"
+safety = "error"
+dead_code = "warning"
+
+[suppressions]
+"tests/" = ["style"]
+"legacy/" = "all"
+"generated/" = "all"
+
+[fix]
+enabled = true
+backup = true

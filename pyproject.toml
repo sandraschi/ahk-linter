@@ -1,0 +1,18 @@
+[project]
+name = "ahk-lint"
+version = "2.0.0"
+description = "AutoHotkey v2 Linter — AST-based analysis, auto-fix, config, SARIF output"
+authors = [{name = "Sandra Schipal"}]
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = ["lark>=1.1.0", "click>=8.0"]
+
+[project.scripts]
+ahk-lint = "ahk_lint:cli"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ahk_lint*"]

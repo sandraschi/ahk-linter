@@ -1,0 +1,70 @@
+// AHK v2 Lark Grammar — subset covering common constructs for linting
+
+start: (statement | function_def | class_def | hotkey)*
+
+statement: assignment | if_stmt | loop_stmt | try_stmt | for_stmt | while_stmt
+         | return_stmt | throw_stmt | expression | directive | include_stmt
+
+assignment: variable ":=" expression -> assign_var
+          | variable "." identifier ":=" expression -> assign_prop
+          | "global"? variable ":=" expression -> assign_global
+          | "static"? variable ":=" expression -> assign_static
+
+if_stmt: "if" "("? expression ")"? block ("else" "if" "("? expression ")"? block)* ("else" block)?
+
+loop_stmt: "Loop" expression? block
+          | "Loop" "Files" expression ("," expression)* block
+          | "Loop" "Parse" expression ("," expression)* block
+
+for_stmt: "for" identifier ("," identifier)? "in" expression block
+
+while_stmt: "while" "("? expression ")"? block
+
+try_stmt: "try" block ("catch" ("as" identifier)? block)? ("finally" block)?
+
+return_stmt: "return" expression?
+throw_stmt: "throw" expression
+
+block: "{" statement* "}" | statement
+
+expression: comparison
+comparison: addition (("=" | "!=" | "<" | ">" | "<=" | ">=") addition)*
+addition: multiplication (("+" | "-" | ".") multiplication)*
+multiplication: unary (("*" | "/" | "//" | "&" | "|") unary)*
+unary: ("-" | "!")? atom
+
+atom: NUMBER -> number
+    | ESCAPED_STRING -> string
+    | "true" -> true
+    | "false" -> false
+    | "null" -> null
+    | variable
+    | call
+    | member_access
+    | "(" expression ")"
+
+call: variable "(" (expression ("," expression)*)? ")"
+member_access: variable "." identifier
+
+variable: ("%"? identifier "%"? ("[" expression "]")? ("." identifier)*)+
+identifier: /[A-Za-z_][A-Za-z0-9_]*/
+
+function_def: ("static")? identifier "(" param_list? ")" block
+class_def: "class" identifier ("extends" identifier)? "{" class_member* "}"
+class_member: identifier "(" param_list? ")" block
+            | "static" identifier ":=" expression
+            | identifier ":=" expression
+
+param_list: param ("," param)*
+param: identifier ("=" expression)?
+
+hotkey: /[^:]+/ "::" block
+
+include_stmt: "#Include" expression
+directive: /#\w+/ (expression)*
+
+NUMBER: /-?\d+(\.\d+)?([eE][-+]?\d+)?/
+ESCAPED_STRING: /"[^"\\]*(\\.[^"\\]*)*"/
+COMMENT: /;.*/
+%ignore COMMENT
+%ignore /[ \t\r\n]+/
