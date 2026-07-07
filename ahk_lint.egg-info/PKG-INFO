@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: ahk-lint
+Version: 2.0.0
+Summary: AutoHotkey v2 Linter — AST-based analysis, auto-fix, config, SARIF output
+Author: Sandra Schipal
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: lark>=1.1.0
+Requires-Dist: click>=8.0

@@ -5,12 +5,14 @@ start: (statement | function_def | class_def | hotkey)*
 statement: assignment | if_stmt | loop_stmt | try_stmt | for_stmt | while_stmt
          | return_stmt | throw_stmt | expression | directive | include_stmt
 
-assignment: variable ":=" expression -> assign_var
-          | variable "." identifier ":=" expression -> assign_prop
-          | "global"? variable ":=" expression -> assign_global
-          | "static"? variable ":=" expression -> assign_static
+assignment: simple_assign | global_assign | static_assign | prop_assign
+simple_assign: variable ":=" expression
+prop_assign: variable "." identifier ":=" expression
+global_assign: "global" variable ":=" expression
+static_assign: "static" variable ":=" expression
 
 if_stmt: "if" "("? expression ")"? block ("else" "if" "("? expression ")"? block)* ("else" block)?
+       | "if" "("? expression ")"? block
 
 loop_stmt: "Loop" expression? block
           | "Loop" "Files" expression ("," expression)* block
@@ -49,7 +51,8 @@ member_access: variable "." identifier
 variable: ("%"? identifier "%"? ("[" expression "]")? ("." identifier)*)+
 identifier: /[A-Za-z_][A-Za-z0-9_]*/
 
-function_def: ("static")? identifier "(" param_list? ")" block
+function_def: "static" identifier "(" param_list? ")" block
+           | identifier "(" param_list? ")" block
 class_def: "class" identifier ("extends" identifier)? "{" class_member* "}"
 class_member: identifier "(" param_list? ")" block
             | "static" identifier ":=" expression

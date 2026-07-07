@@ -1,0 +1,2 @@
+[console_scripts]
+ahk-lint = ahk_lint:cli

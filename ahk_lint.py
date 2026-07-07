@@ -16,16 +16,24 @@ from checks.v1_syntax import V1SyntaxCheck
 from checks.safety import SafetyCheck
 from checks.style import StyleCheck
 from checks.dead_code import DeadCodeCheck
+from checks.command_rules import CommandRulesCheck
+from checks.function_renames import FunctionRenamesCheck, OldObjectModelCheck
 from config import LinterConfig
 from reporter import TerminalReporter, SARIFReporter, JSONReporter
 
 
-def load_grammar() -> Lark:
+def load_grammar() -> Optional[Lark]:
     grammar_path = Path(__file__).parent / "grammar.lark"
-    return Lark.open(grammar_path, parser="lalr", maybe_placeholders=True)
+    try:
+        return Lark.open(grammar_path, parser="lalr", maybe_placeholders=True)
+    except Exception as e:
+        click.echo(f"Warning: Grammar loading failed ({e}). Falling back to regex-only mode.", err=True)
+        return None
 
 
-def parse_file(source: str, grammar: Lark) -> Optional[Tree]:
+def parse_file(source: str, grammar: Optional[Lark]) -> Optional[Tree]:
+    if grammar is None:
+        return None
     try:
         return grammar.parse(source)
     except UnexpectedInput:
@@ -54,6 +62,9 @@ class Linter:
             SafetyCheck(config),
             StyleCheck(config),
             DeadCodeCheck(config),
+            CommandRulesCheck(config),
+            FunctionRenamesCheck(config),
+            OldObjectModelCheck(config),
         ]
 
     def lint_file(self, path: Path) -> list:

@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+ahk_lint.egg-info/PKG-INFO
+ahk_lint.egg-info/SOURCES.txt
+ahk_lint.egg-info/dependency_links.txt
+ahk_lint.egg-info/entry_points.txt
+ahk_lint.egg-info/requires.txt
+ahk_lint.egg-info/top_level.txt
