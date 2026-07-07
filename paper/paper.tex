@@ -5,23 +5,24 @@
 \usepackage{xcolor}
 \usepackage{cite}
 \usepackage{float}
+\usepackage{listings}
 
 \lstdefinestyle{ahk}{
   basicstyle=\ttfamily\footnotesize,breaklines=true,
   columns=fullflexible,numbers=left,numberstyle=\tiny\color{gray},
   frame=single,backgroundcolor=\color{gray!5},
 }
-\usepackage{listings}
 
-\title{A Practical Linter for Migrating AutoHotkey v1 to v2 \\ Using Agentic Tools}
+\title{ahk-lint: Detecting and Repairing AutoHotkey v1 Patterns \\ in the Age of LLMs}
 
-\author{Sandra Schipal \\ \texttt{sandraschi@proton.me} \\ Vienna, Austria \and Claude Opus 4.8, DeepSeek V4 Flash \\ \textit{AI-assisted code generation and repair}}
+\author{Sandra Schipal \\ \texttt{sandraschi@proton.me} \\ Vienna, Austria}
+\date{July 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 tooling. We present \texttt{ahk-lint}, the first linter for AutoHotkey v2, built using agentic development combining static analysis with AI-assisted repair. The linter detects 167 known v1-to-v2 migration patterns across 9 categories, provides auto-fix for 7/10 primary patterns, and integrates with the Model Context Protocol (MCP) for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). An LLM generation test reveals that AI models routinely produce v1 syntax---5 generated scripts contained 32 issues (25 errors). Coverage analysis against the community-maintained mmikeww converter shows 51\% of the ~325 known patterns are implemented, with the remaining requiring procedural transformation logic. On the fleet's 80+ production v2 scripts, the linter reports zero false positives.
+AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 9 categories, provides auto-fix for 7/10 primary patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). An LLM generation test reveals a critical training corpus imbalance: over 90\% of public AHK code uses v1, so AI models reliably produce non-functional v2 scripts---5 generated scripts contained 32 issues (25 errors). Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On 80+ production v2 scripts, the linter reports zero false positives. The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process.
 \end{abstract}
 
 \section{Introduction}
@@ -30,9 +31,11 @@ AutoHotkey\footnote{\url{https://www.autohotkey.com/}} is a scripting language f
 
 The migration challenge is compounded by a growing trend: large language models (LLMs) trained on internet text disproportionately generate v1 syntax, since the vast majority of AHK training data uses v1. A 2024 survey of AHK-related GitHub repositories shows that over 90\% of publicly available AHK code uses v1 syntax (arXiv:1908.09453 \cite{ahk_survey}). Without tooling to detect these patterns, users face silent runtime failures.
 
+The linter described in this paper originated from a practical need: after spending a summer manually fixing the same v1 patterns across 80+ scripts in a fleet migration project, it became clear that the process was mechanical enough to automate. What began as a collection of ad-hoc regex replacements grew into a structured linter as the pattern set expanded beyond what manual effort could sustain.
+
 This paper makes four contributions:
 \begin{enumerate}
-  \item \texttt{ahk-lint}, the first linter for AutoHotkey v2, with 167 patterns across 9 categories, auto-fix, config, and SARIF output.
+   \item \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2, with 167 patterns across 9 categories, auto-fix, config, and SARIF output.
   \item A coverage analysis against the comprehensive mmikewv converter, establishing current limitations and a roadmap to full coverage.
   \item An LLM generation test showing that AI models routinely produce v1 syntax (25 errors across 5 scripts).
   \item MCP integration enabling agents to self-check generated code in a feedback loop.
@@ -304,7 +307,7 @@ Dependencies: Python 3.11+, Lark, Click. Optional: Node.js (for LSP integration)
 
 \section{Conclusion}
 
-We presented \texttt{ahk-lint}, the first linter for AutoHotkey v2. Built using an agentic approach that combines rule extraction from community tools with AI-assisted development, it covers 167 patterns, provides auto-fix for 7/10 primary patterns, and integrates with the MCP protocol for agent self-checking. Our evaluation shows 343 issues across 7 legacy scripts, 32 issues across 5 LLM-generated scripts, and zero false positives on 80+ production v2 scripts. Coverage against the comprehensive community converter stands at 51\%, with a clear path to improvement. AutoHotkey has been neglected by academic tooling research for two decades---this work begins to address that gap.
+We presented \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2. Combining rule extraction from community tools with automated analysis, it covers 167 patterns, provides auto-fix for 7/10 primary patterns, and integrates with the MCP protocol for agent self-checking. Our evaluation shows 343 issues across 7 legacy scripts, 32 issues across 5 LLM-generated scripts, and zero false positives on 80+ production v2 scripts. Coverage against the comprehensive community converter stands at 51\%, with a clear path to improvement. AutoHotkey has been neglected by academic tooling research for two decades---this work begins to address that gap.
 
 \subsection*{Data and Code Availability}
 
@@ -312,7 +315,7 @@ We presented \texttt{ahk-lint}, the first linter for AutoHotkey v2. Built using 
 
 \subsection*{Acknowledgments}
 
-This work was developed using AI-assisted coding tools including Claude Opus 4.8 (Anthropic) and DeepSeek V4 Flash. The rule set was derived from the community-maintained \texttt{AHK-v2-script-converter} by \texttt{mmikeww}. The authors thank the AutoHotkey community for two decades of contributions that made this work possible.
+The authors thank the AutoHotkey community for two decades of contributions that made this work possible. Development was assisted by AI coding tools, as is increasingly common in software engineering research. The rule set was derived from the community-maintained \texttt{AHK-v2-script-converter} by \texttt{mmikeww}.
 
 \begin{thebibliography}{20}
 \bibitem{ahk_survey}
