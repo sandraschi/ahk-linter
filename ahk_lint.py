@@ -20,6 +20,7 @@ from checks.command_rules import CommandRulesCheck
 from checks.function_renames import FunctionRenamesCheck, OldObjectModelCheck
 from config import LinterConfig
 from reporter import TerminalReporter, SARIFReporter, JSONReporter
+from lsp_client import LSPClient
 
 
 def load_grammar() -> Optional[Lark]:
@@ -54,9 +55,11 @@ def collect_suppressions(source: str) -> list:
 
 
 class Linter:
-    def __init__(self, config: LinterConfig, grammar: Lark):
+    def __init__(self, config: LinterConfig, grammar: Lark, use_lsp: bool = False):
         self.config = config
         self.grammar = grammar
+        self.use_lsp = use_lsp
+        self.lsp = LSPClient() if use_lsp else None
         self.checks = [
             V1SyntaxCheck(config),
             SafetyCheck(config),
@@ -88,6 +91,13 @@ class Linter:
                 if not self._is_suppressed(issue, suppressions):
                     issues.append(issue)
 
+        # LSP second pass (optional)
+        if self.use_lsp and self.lsp:
+            lsp_issues = self.lsp.lint(source)
+            for li in lsp_issues:
+                if not self._is_suppressed(li, suppressions):
+                    issues.append(li)
+
         return issues
 
     def _is_suppressed(self, issue: dict, suppressions: list) -> bool:
@@ -115,11 +125,15 @@ class Linter:
 @click.option("--format", "output_format", default="terminal", type=click.Choice(["terminal", "sarif", "json"]))
 @click.option("--config", "config_path", default=None, help="Config file path")
 @click.option("--backup", is_flag=True, default=True, help="Create .bak files when fixing")
-def cli(paths, fix, output_format, config_path, backup):
+@click.option("--lsp", is_flag=True, help="Use thqby LSP server for deeper analysis (requires Node.js)")
+def cli(paths, fix, output_format, config_path, backup, lsp):
     """ahk-lint: AutoHotkey v2 linter with AST analysis and auto-fix."""
     grammar = load_grammar()
     config = LinterConfig.load(config_path)
-    linter = Linter(config, grammar)
+    linter = Linter(config, grammar, use_lsp=lsp)
+
+    if lsp:
+        linter.lsp.start()
 
     # Collect files
     files = []
@@ -168,6 +182,8 @@ def cli(paths, fix, output_format, config_path, backup):
 
     # Exit code
     total = sum(len(v) for v in all_issues.values())
+    if lsp:
+        linter.lsp.stop()
     sys.exit(1 if total > 0 else 0)
 
 
