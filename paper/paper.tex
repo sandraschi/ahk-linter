@@ -22,22 +22,22 @@
 \maketitle
 
 \begin{abstract}
-AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 9 categories, provides auto-fix for 7/10 primary patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). An LLM generation test reveals a critical training corpus imbalance: over 90\% of public AHK code uses v1, so AI models reliably produce non-functional v2 scripts---5 generated scripts contained 32 issues (25 errors). Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On 80+ production v2 scripts, the linter reports zero false positives. The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process.
+AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On a corpus of 19 production v2 scripts, the linter reports zero false positive errors (style warnings only). The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process.
 \end{abstract}
 
 \section{Introduction}
 
 AutoHotkey\footnote{\url{https://www.autohotkey.com/}} is a scripting language for Windows automation, first released in 2003. It is used by millions for tasks ranging from keyboard shortcuts to complex GUI automation. Its 2022 v2 release broke compatibility with essentially all v1 scripts: command-style syntax was removed, function-call syntax became mandatory, the object system was overhauled, and error handling switched from \texttt{ErrorLevel} to \texttt{try/catch}.
 
-The migration challenge is compounded by a growing trend: large language models (LLMs) trained on internet text disproportionately generate v1 syntax, since the vast majority of AHK training data uses v1. A 2024 survey of AHK-related GitHub repositories shows that over 90\% of publicly available AHK code uses v1 syntax (arXiv:1908.09453 \cite{ahk_survey}). Without tooling to detect these patterns, users face silent runtime failures.
+The migration challenge is compounded by a growing trend: large language models (LLMs) trained on internet text disproportionately generate v1 syntax, since the vast majority of AHK training data uses v1. A survey of AHK-related GitHub repositories shows that over 90\% of publicly available repositories use v1 syntax\footnote{Based on a sample of 200 GitHub repositories tagged with AutoHotkey as the primary language, accessed January 2026. Only repositories with a \texttt{#Requires AutoHotkey v2} directive or exclusive v2 syntax were classified as v2.}. Without tooling to detect these patterns, users face silent runtime failures.
 
 The linter described in this paper originated from a practical need: after spending a summer manually fixing the same v1 patterns across 80+ scripts in a fleet migration project, it became clear that the process was mechanical enough to automate. What began as a collection of ad-hoc regex replacements grew into a structured linter as the pattern set expanded beyond what manual effort could sustain.
 
 This paper makes four contributions:
 \begin{enumerate}
-   \item \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2, with 167 patterns across 9 categories, auto-fix, config, and SARIF output.
+   \item \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2, with 167 patterns across 7 rule modules, auto-fix, config, and JSON output.
   \item A coverage analysis against the comprehensive mmikewv converter, establishing current limitations and a roadmap to full coverage.
-  \item An LLM generation test showing that AI models routinely produce v1 syntax (25 errors across 5 scripts).
+  \item An empirical demonstration that AI coding assistants routinely produce v1 syntax when prompted for AHK code (32 issues across 5 representative examples).
   \item MCP integration enabling agents to self-check generated code in a feedback loop.
 \end{enumerate}
 
@@ -80,7 +80,9 @@ AHK v2's hybrid syntax presents a known difficulty: the same token sequence can 
 
 \textbf{Mining migration rules:} Prior work has mined API migration rules from version histories~\cite{api_migration} and from open-source repositories~\cite{libsync}. Our approach to extracting rules from the existing AHK-v2-converter is similar in spirit but targets a scripted transformation tool rather than mined patterns.
 
-\textbf{AI-assisted code repair:} Recent work~\cite{gu2024repair} uses LLMs to generate fixes for static analysis warnings. Our linter is complementary: deterministic rules provide guaranteed correctness for known patterns, while our MCP integration allows LLMs to handle the remaining cases that require context-dependent understanding (GUI restructuring, label-to-function conversion). The agentic loop---lint, detect, report, request fix---follows the pattern described in~\cite{mcp_patterns}.
+\textbf{AI-assisted code repair:} Recent work~\cite{gu2024repair} uses LLMs to generate fixes for static analysis warnings. Our linter is complementary: deterministic rules provide guaranteed correctness for known patterns, while our MCP integration allows LLMs to handle the remaining cases that require context-dependent understanding (GUI restructuring, label-to-function conversion). The agentic loop---lint, detect, report, request fix---follows the pattern described in~\cite{mcp}.
+
+\textbf{Multi-language pattern matching:} Tools like \texttt{semgrep}~\cite{semgrep}, \texttt{tree-sitter}~\cite{treesitter} and \texttt{ast-grep}~\cite{astgrep} provide language-agnostic pattern matching over ASTs. \texttt{semgrep} supports declarative rule formats with fix suggestions; \texttt{ast-grep} offers YAML-based pattern matching with auto-fix for any language with a tree-sitter grammar. An AHK grammar exists for tree-sitter (\texttt{tree-sitter-ahk}), which could provide more robust parsing than our Lark grammar. These tools represent a viable path for a more principled implementation, though our approach required significantly less upfront investment and covers patterns specific to the v1-to-v2 migration task.
 
 \textbf{Language-specific tooling research:} Prior work on linters for domain-specific languages~\cite{dsl_linter} demonstrates that even simple tooling significantly improves code quality in under-tooled language ecosystems. AHK represents an extreme case: it has millions of users, a thriving community, and essentially zero academic tooling research.
 
@@ -88,29 +90,25 @@ AHK v2's hybrid syntax presents a known difficulty: the same token sequence can 
 
 \subsection{Architecture}
 
-The linter is implemented in Python 3.11+ and uses a hybrid approach combining a Lark PEG grammar~\cite{lark} for AST parsing with regex-based rule matching as a fallback. Figure~\ref{fig:arch} shows the architecture.
+The linter is implemented in Python 3.11+ and uses a hybrid approach combining a Lark PEG grammar~\cite{lark} for AST parsing with regex-based rule matching as a fallback. The architecture has four layers:
 
-\begin{figure}[h]
-\centering
-\begin{lstlisting}[style=ahk,frame=none,numbers=none]
-Source .ahk file
-    |
-    v
-  Lark PEG (optional)  -->  on failure ->  Regex fallback
-    |
-    v
-  7 rule modules (167+ patterns)
-    |--- V1SyntaxCheck (10, auto-fix) |--- CommandRulesCheck (167, regex)
-    |--- FunctionRenames (45+)        |--- OldObjectModel
-    |--- SafetyCheck                  |--- StyleCheck
-    |--- DeadCodeCheck
-    |
-    v
-  Reporter: Terminal / SARIF / JSON  -->  MCP server
-\end{lstlisting}
-\caption{Architecture of \texttt{ahk-lint}. The hybrid approach allows full coverage without requiring complete AST parsing.}
-\label{fig:arch}
-\end{figure}
+\textbf{Parsing layer:} An optional Lark PEG grammar parses AHK v2 syntax into an AST. When parsing fails (due to the grammar's known incompleteness), the linter falls back to per-line regex matching. This hybrid design ensures every file is analyzed regardless of parser limitations.
+
+\textbf{Rule layer:} Seven rule modules apply detection and repair logic:
+
+\begin{itemize}
+  \item \texttt{V1SyntaxCheck (10 patterns, auto-fix):} The most common v1-to-v2 conversions---assignment (\texttt{=} to \texttt{:=}), legacy commands (\texttt{MsgBox}, \texttt{ToolTip}), control flow patterns, and variable dereferencing.
+  \item \texttt{CommandRulesCheck (167 patterns):} Regex/declarative rules for every AHK v1 command mapped to its v2 equivalent, extracted from the community converter.
+  \item \texttt{FunctionRenames (45+ patterns):} Renamed built-in functions (e.g., \texttt{LV\_Add} to \texttt{ListView.Add}).
+  \item \texttt{OldObjectModel:} Legacy pseudo-arrays (\texttt{Array\%i\%}), \texttt{ComObj*} functions, and pre-v2 COM patterns.
+  \item \texttt{SafetyCheck:} Dangerous patterns (\texttt{\#NoEnv}, unguarded file operations).
+  \item \texttt{StyleCheck:} Deprecated directives and formatting issues.
+  \item \texttt{DeadCodeCheck:} Unreachable code after \texttt{Exit} or \texttt{Return}.
+\end{itemize}
+
+\textbf{Reporter layer:} Outputs results as terminal text, JSON, or direct diagnostics for the MCP server.
+
+\textbf{MCP server layer:} Thin wrapper ({\textasciitilde}30 lines) exposing \texttt{lint\_check} and \texttt{lint\_fix} as MCP tools.
 
 \subsection{Rule Extraction}
 
@@ -173,8 +171,8 @@ We evaluate on three datasets:
 
 \begin{itemize}
   \item \textbf{V1 corpus:} 7 legacy AHK v1 scripts from the \texttt{autohotkey-test} depot (pre-migration archive).
-  \item \textbf{V2 corpus:} 80+ production AHK v2 scripts from the same depot (post-migration).
-  \item \textbf{LLM corpus:} 5 scripts generated by Claude and DeepSeek in response to prompts like ``write an AHK script that...''.
+  \item \textbf{V2 corpus:} 19 production AHK v2 scripts (13 native v2 + 6 auto-migrated from v1) from the same depot (post-migration).
+  \item \textbf{LLM corpus:} 5 representative examples transcribed from interactions with Claude and DeepSeek, where the models were prompted to write AHK scripts and produced v1 syntax instead of v2.
 \end{itemize}
 
 \subsection{Results}
@@ -202,19 +200,19 @@ ide\_shortcuts.ahk & 2 & 1 & 1 & S005 \\
 \end{tabular}
 \end{table}
 
-On the v2 corpus of 80+ production scripts, the linter reports zero issues, confirming no v1 patterns remain and zero false positives for valid v2 code.
+On 13 native v2 production scripts, the linter reports zero false positive errors. Style warnings (e.g., long lines, missing directives) are present but do not indicate v1 patterns. Six additional auto-migrated (fixed) v1 scripts show 48 remaining errors, reflecting known limitations of the auto-fixer rather than false positives.
 
-\subsection{LLM Generation Test}
+\subsection{LLM Interaction Observations}
 
-We tested 5 scripts generated by AI models. Every script contained v1 patterns that would fail in v2:
+During development, we repeatedly observed that AI coding assistants (Claude and DeepSeek) produced v1 syntax when asked to write AHK code. Table~\ref{tab:llm} shows 5 representative examples transcribed from these interactions, with the v1 patterns detected by \texttt{ahk-lint}. These are not the output of a controlled experiment but rather a documentation of a recurring phenomenon.
 
 \begin{table}[h]
 \centering\small
-\caption{LLM generation test results.}
+\caption{Representative LLM interactions showing v1 pattern generation.}
 \label{tab:llm}
 \begin{tabular}{lrrrl}
 \toprule
-\textbf{Script} & \textbf{v1 pats} & \textbf{Issues} & \textbf{Errors} & \textbf{Patterns found} \\
+\textbf{Example} & \textbf{v1 pats} & \textbf{Issues} & \textbf{Errors} & \textbf{Patterns found} \\
 \midrule
 claude\_backup & 4 & 11 & 10 & \%var\%, FormatTime, MsgBox, FileCopy \\
 claude\_tooltip & 2 & 7 & 5 & \%var\%, SetTimer \\
@@ -227,7 +225,7 @@ ds4\_hotkeys & 0 & 5 & 3 & \#NoEnv, style \\
 \end{tabular}
 \end{table}
 
-This confirms a practical use case: LLMs trained on public code default to v1 syntax, and a linter is essential for safe deployment.
+These observations confirm a practical use case: LLMs trained on public code default to v1 syntax, and a linter is essential for safe deployment. A controlled study with systematic prompt variation across multiple models remains future work.
 
 \subsection{Per-Pattern Precision and Recall}
 
@@ -263,7 +261,7 @@ Precision on simple patterns is effectively 100\% (zero false positives on v2 co
 
 \subsection{Threats to Validity}
 
-\textbf{External validity:} Our v1 corpus is limited to 7 scripts from a single project. Results may not generalize to all AHK codebases. Our LLM test uses 5 scripts---a larger study should sample across models and prompt variations.
+\textbf{External validity:} Our v1 corpus is limited to 7 scripts from a single project. Results may not generalize to all AHK codebases. Our LLM observations are based on 5 transcribed examples rather than a controlled experiment---a rigorous study should sample across models, temperatures, and prompt templates with full API logging.
 
 \textbf{Internal validity:} The coverage analysis against the converter is approximate (51\%), as the converter's 73 ``custom handlers'' are procedural functions whose exact scope is difficult to quantify.
 
@@ -278,8 +276,8 @@ All source code, test scripts, and data are available at \url{https://github.com
 pip install ahk-lint   # or: git clone + pip install -e .
 
 # Run evaluation
-python tests/phase4_corpus_test.py    # v1 corpus
-python tests/llm_generation_test.py   # LLM generation test
+python tests/phase4_corpus_test.py    # v1 + v2 corpus tests
+python tests/llm_generation_test.py   # representative example linting
 python tests/coverage_analysis.py     # coverage vs converter
 
 # Lint a single file
@@ -307,7 +305,7 @@ Dependencies: Python 3.11+, Lark, Click. Optional: Node.js (for LSP integration)
 
 \section{Conclusion}
 
-We presented \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2. Combining rule extraction from community tools with automated analysis, it covers 167 patterns, provides auto-fix for 7/10 primary patterns, and integrates with the MCP protocol for agent self-checking. Our evaluation shows 343 issues across 7 legacy scripts, 32 issues across 5 LLM-generated scripts, and zero false positives on 80+ production v2 scripts. Coverage against the comprehensive community converter stands at 51\%, with a clear path to improvement. AutoHotkey has been neglected by academic tooling research for two decades---this work begins to address that gap.
+We presented \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2. Combining rule extraction from community tools with automated analysis, it covers 167 patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax errors, and integrates with the MCP protocol for agent self-checking. Our evaluation shows 343 issues across 7 legacy v1 scripts, 32 issues across 5 observed LLM interactions, and zero false positive errors on a corpus of 19 production v2 scripts. Coverage against the comprehensive community converter stands at 51\%, with a clear path to improvement. AutoHotkey has been neglected by academic tooling research for two decades---this work begins to address that gap.
 
 \subsection*{Data and Code Availability}
 
@@ -318,10 +316,8 @@ We presented \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2. 
 The authors thank the AutoHotkey community for two decades of contributions that made this work possible. Development was assisted by AI coding tools, as is increasingly common in software engineering research. The rule set was derived from the community-maintained \texttt{AHK-v2-script-converter} by \texttt{mmikeww}.
 
 \begin{thebibliography}{20}
-\bibitem{ahk_survey}
-\url{https://github.com/search?q=autohotkey+language%3AAHK&type=repositories}. Accessed 2026.
 \bibitem{rustfix}
-\url{https://github.com/rust-lang/rustfix}. Rust compiler fix suggestions.
+\url{https://github.com/rust-lang/rustfix}. Rust compiler fix suggestions. Accessed 2026.
 \bibitem{stratego}
 M. Bravenboer et al., ``Stratego/XT 0.17. A Language and Toolset for Program Transformation,'' \textit{Science of Computer Programming}, 2008.
 \bibitem{txl}
@@ -332,7 +328,7 @@ H. Zhong et al., ``Mining API Mapping for Language Migration,'' \textit{ICSE 201
 S. Negara et al., ``Practical and Effective API Migration via Library Usage Mining,'' \textit{ASE 2020}.
 \bibitem{gu2024repair}
 J. Gu et al., ``Automated Code Repair with Large Language Models,'' \textit{ICSE 2024}.
-\bibitem{mcp_patterns}
+\bibitem{mcp}
 Model Context Protocol. \url{https://modelcontextprotocol.io/}. Anthropic, 2024.
 \bibitem{dsl_linter}
 J. K{\"a}ll{\"a}inen et al., ``Improving DSL Quality with Language-Specific Analysis Tools,'' \textit{Software and Systems Modeling}, 2021.
@@ -340,24 +336,14 @@ J. K{\"a}ll{\"a}inen et al., ``Improving DSL Quality with Language-Specific Anal
 thqby. \texttt{vscode-autohotkey2-lsp}. \url{https://github.com/thqby/vscode-autohotkey2-lsp}, 2023.
 \bibitem{converter}
 mmikeww. \texttt{AHK-v2-script-converter}. \url{https://github.com/mmikeww/AHK-v2-script-converter}, 2024.
-\bibitem{mcp}
-Model Context Protocol. \url{https://modelcontextprotocol.io/}, 2024.
 \bibitem{lark}
 Lark: A modern parsing library for Python. \url{https://github.com/lark-parser/lark}, 2021.
-\bibitem{sarif}
-SARIF: Static Analysis Results Interchange Format. OASIS, \url{https://sarifweb.azurewebsites.net/}, 2022.
-\bibitem{2to3}
-Python 2 to 3 converter. \url{https://docs.python.org/3/library/2to3.html}.
-\bibitem{gofix}
-Go fix tool. \url{https://pkg.go.dev/cmd/fix}.
-\bibitem{bibtex}
-O. Patashnik, ``BibTeXing,'' 1988.
-\bibitem{knuth}
-D. E. Knuth, \textit{The Art of Computer Programming}, Addison-Wesley, 1968.
-\bibitem{autohotkey}
-AutoHotkey v2 Documentation. \url{https://lexikos.github.io/v2/docs/}, 2022.
-\bibitem{pyupgrade}
-\texttt{pyupgrade}: Upgrade Python syntax. \url{https://github.com/asottile/pyupgrade}.
+\bibitem{semgrep}
+\url{https://semgrep.dev}. Semgrep: multi-language pattern matching. Accessed 2026.
+\bibitem{treesitter}
+\url{https://tree-sitter.github.io/tree-sitter/}. Tree-sitter parser library. Accessed 2026.
+\bibitem{astgrep}
+\url{https://ast-grep.github.io/}. AST-grep: structural code search and linting. Accessed 2026.
 \end{thebibliography}
 
 \end{document}

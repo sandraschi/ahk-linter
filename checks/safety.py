@@ -23,10 +23,14 @@ class SafetyCheck(BaseCheck):
         if not re.search(r"#SingleInstance", source, re.IGNORECASE):
             issues.append(self._make_issue("S005", "Missing #SingleInstance Force", 1))
 
-        # S003: FileRead/FileOpen without try/catch
+        # S003: FileRead/FileOpen without try/catch (v1 command form only — function calls are fine)
         io_funcs = re.finditer(r"\b(FileRead|FileOpen|FileAppend|FileDelete|FileMove)\b", source)
         for m in io_funcs:
             line_num = source[:m.start()].count("\n") + 1
+            # Skip if used as function call: FileRead(...) not FileRead, output, input
+            after = source[m.end():m.end() + 3]
+            if after.startswith("("):
+                continue
             # Check if this line is inside a try block
             if not self._inside_try(source, line_num):
                 issues.append(self._make_issue("S003", f"{m.group(1)} without try/catch", line_num))

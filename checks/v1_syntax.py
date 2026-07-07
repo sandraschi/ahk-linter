@@ -35,9 +35,13 @@ class V1SyntaxCheck(BaseCheck):
 
     def run(self, source: str, ast: Optional[Tree]) -> list[dict]:
         issues = []
+        lines = source.split("\n")
         for rule_id, pattern, message, _ in self.patterns:
             for m in re.finditer(pattern, source, re.MULTILINE):
                 line = source[:m.start()].count("\n") + 1
+                # Skip W008 on #Include lines (%A_ScriptDir% is valid v2 syntax)
+                if rule_id == "W008" and line <= len(lines) and lines[line - 1].strip().startswith("#Include"):
+                    continue
                 fixable = rule_id in self.fix_patterns
                 issues.append(self._make_issue(rule_id, message, line, fixable=fixable))
         return issues

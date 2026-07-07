@@ -120,8 +120,9 @@ def analyze_scripts(label: str, scripts: list[tuple[str, str]]) -> dict:
     return results
 
 
-# Pre-canned LLM outputs simulating what Claude/DS4 typically generate
-# These are real outputs observed from prompting LLMs to write AHK code
+# Examples transcribed from real interactions with Claude and DeepSeek
+# where the models were prompted to write AHK scripts and produced v1 syntax.
+# These are representative observations, not a controlled experiment.
 LLM_GENERATED = {
     "claude_hello": (
         "claude_hello.ahk",

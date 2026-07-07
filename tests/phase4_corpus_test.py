@@ -54,13 +54,38 @@ def test_scripts(label: str, dir_path: Path) -> list[dict]:
 if __name__ == "__main__":
     fixtures = Path(__file__).parent / "fixtures"
     v1_dir = fixtures / "v1_originals"
+    v2_dir = fixtures / "v2_production"
+    v1_fixed_dir = fixtures / "v1_originals_fixed"
 
     print("=" * 60)
     print("AHK Linter Phase 4 — Corpus Test")
     print("=" * 60)
 
+    v1_results = []
     if v1_dir.exists():
         v1_results = test_scripts("V1 SCRIPTS (before migration)", v1_dir)
     else:
         print(f"\nNo v1 fixtures at {v1_dir}")
+
+    v2_results = []
+    if v2_dir.exists():
+        v2_results = test_scripts("V2 PRODUCTION SCRIPTS", v2_dir)
+    else:
+        print(f"\nNo v2 fixtures at {v2_dir}")
+
+    v1_fixed_results = []
+    if v1_fixed_dir.exists():
+        v1_fixed_results = test_scripts("V1 SCRIPTS (auto-fixed to v2)", v1_fixed_dir)
+    else:
+        print(f"\nNo v1_fixed fixtures at {v1_fixed_dir}")
+
+    native_v2_errors = sum(r["by_severity"]["error"] for r in v2_results)
+    native_v2_warnings = sum(r["by_severity"]["warning"] for r in v2_results)
+    fixed_v2_errors = sum(r["by_severity"]["error"] for r in v1_fixed_results)
+    fixed_v2_warnings = sum(r["by_severity"]["warning"] for r in v1_fixed_results)
+    print(f"\n=== V2 FALSE POSITIVE CHECK ===")
+    print(f"  Native v2 scripts ({len(v2_results)}): {native_v2_errors} errors, {native_v2_warnings} warnings")
+    print(f"  Auto-fixed v1 scripts ({len(v1_fixed_results)}): {fixed_v2_errors} errors, {fixed_v2_warnings} warnings (expected — fixer not perfect)")
+    if native_v2_errors == 0:
+        print(f"  Zero false positive errors on native v2 scripts confirmed.")
     print("\nDone.")
