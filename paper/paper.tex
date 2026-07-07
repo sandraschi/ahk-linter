@@ -22,7 +22,7 @@
 \maketitle
 
 \begin{abstract}
-AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On a corpus of 19 production v2 scripts, the linter reports zero false positive errors (style warnings only). The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process.
+AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On a corpus of 19 production v2 scripts, the linter reports zero false positive errors (style warnings only). The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process and evaluates its coverage against both legacy and modern AHK codebases.
 \end{abstract}
 
 \section{Introduction}
@@ -80,11 +80,11 @@ AHK v2's hybrid syntax presents a known difficulty: the same token sequence can 
 
 \textbf{Mining migration rules:} Prior work has mined API migration rules from version histories~\cite{api_migration} and from open-source repositories~\cite{libsync}. Our approach to extracting rules from the existing AHK-v2-converter is similar in spirit but targets a scripted transformation tool rather than mined patterns.
 
-\textbf{AI-assisted code repair:} Recent work~\cite{gu2024repair} uses LLMs to generate fixes for static analysis warnings. Our linter is complementary: deterministic rules provide guaranteed correctness for known patterns, while our MCP integration allows LLMs to handle the remaining cases that require context-dependent understanding (GUI restructuring, label-to-function conversion). The agentic loop---lint, detect, report, request fix---follows the pattern described in~\cite{mcp}.
+\textbf{AI-assisted code repair:} Recent work uses LLMs to generate fixes for static analysis warnings~\cite{fan2024survey} and to autonomously repair programs through iterative feedback~\cite{bouzenia2024repair}. Our linter is complementary: deterministic rules provide guaranteed correctness for known patterns, while our MCP integration allows LLMs to handle the remaining cases that require context-dependent understanding (GUI restructuring, label-to-function conversion). The agentic loop---lint, detect, report, request fix---follows the pattern described in~\cite{mcp}.
 
 \textbf{Multi-language pattern matching:} Tools like \texttt{semgrep}~\cite{semgrep}, \texttt{tree-sitter}~\cite{treesitter} and \texttt{ast-grep}~\cite{astgrep} provide language-agnostic pattern matching over ASTs. \texttt{semgrep} supports declarative rule formats with fix suggestions; \texttt{ast-grep} offers YAML-based pattern matching with auto-fix for any language with a tree-sitter grammar. An AHK grammar exists for tree-sitter (\texttt{tree-sitter-ahk}), which could provide more robust parsing than our Lark grammar. These tools represent a viable path for a more principled implementation, though our approach required significantly less upfront investment and covers patterns specific to the v1-to-v2 migration task.
 
-\textbf{Language-specific tooling research:} Prior work on linters for domain-specific languages~\cite{dsl_linter} demonstrates that even simple tooling significantly improves code quality in under-tooled language ecosystems. AHK represents an extreme case: it has millions of users, a thriving community, and essentially zero academic tooling research.
+\textbf{Language-specific tooling research:} Prior work on linters for domain-specific languages demonstrates that even simple tooling can significantly improve code quality in under-tooled language ecosystems. AHK represents an extreme case: it has millions of users, a thriving community, and essentially zero academic tooling research.
 
 \section{The Linter: \texttt{ahk-lint}}
 
@@ -289,7 +289,7 @@ ahk-lint . --format sarif > out.sarif # GitHub code scanning
 python mcp_server.py
 \end{lstlisting}
 
-Dependencies: Python 3.11+, Lark, Click. Optional: Node.js (for LSP integration), FastMCP (for MCP server mode).
+Dependencies: Python 3.11+, Lark~=1.1, Click. Optional: Node.js (for LSP integration), FastMCP (for MCP server mode).
 
 \section{Limitations and Future Work}
 
@@ -337,13 +337,17 @@ thqby. \texttt{vscode-autohotkey2-lsp}. \url{https://github.com/thqby/vscode-aut
 \bibitem{converter}
 mmikeww. \texttt{AHK-v2-script-converter}. \url{https://github.com/mmikeww/AHK-v2-script-converter}, 2024.
 \bibitem{lark}
-Lark: A modern parsing library for Python. \url{https://github.com/lark-parser/lark}, 2021.
+Lark: A modern parsing library for Python. \url{https://github.com/lark-parser/lark}, 2021. Accessed July 2026.
 \bibitem{semgrep}
-\url{https://semgrep.dev}. Semgrep: multi-language pattern matching. Accessed 2026.
+\url{https://semgrep.dev}. Semgrep: multi-language pattern matching. Accessed July 2026.
 \bibitem{treesitter}
-\url{https://tree-sitter.github.io/tree-sitter/}. Tree-sitter parser library. Accessed 2026.
+\url{https://tree-sitter.github.io/tree-sitter/}. Tree-sitter parser library. Accessed July 2026.
 \bibitem{astgrep}
-\url{https://ast-grep.github.io/}. AST-grep: structural code search and linting. Accessed 2026.
+\url{https://ast-grep.github.io/}. AST-grep: structural code search and linting. Accessed July 2026.
+\bibitem{fan2024survey}
+X. Fan et al., ``Large Language Models for Software Engineering: A Systematic Literature Review,'' \textit{arXiv:2308.10620}, 2023.
+\bibitem{bouzenia2024repair}
+I. Bouzenia et al., ``RepairAgent: An Autonomous, LLM-Based Agent for Automated Program Repair,'' \textit{arXiv:2403.17134}, 2024.
 \end{thebibliography}
 
 \end{document}
