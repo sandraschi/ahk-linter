@@ -1,8 +1,9 @@
 """Safety checks — error handling, uninitialized variables, missing directives."""
 
 import re
-from typing import Optional
+
 from lark import Tree
+
 from checks.base import BaseCheck
 
 
@@ -11,13 +12,15 @@ class SafetyCheck(BaseCheck):
         super().__init__(config)
         self.name = "safety"
 
-    def run(self, source: str, ast: Optional[Tree]) -> list[dict]:
+    def run(self, source: str, ast: Tree | None) -> list[dict]:
         issues = []
-        lines = source.split("\n")
+        source.split("\n")
 
         # S001: Missing #Requires directive
         if not re.search(r"#Requires\s+AutoHotkey", source, re.IGNORECASE):
-            issues.append(self._make_issue("S005", "Missing #Requires AutoHotkey v2.0+ directive", 1))
+            issues.append(
+                self._make_issue("S005", "Missing #Requires AutoHotkey v2.0+ directive", 1)
+            )
 
         # S002: Missing #SingleInstance
         if not re.search(r"#SingleInstance", source, re.IGNORECASE):
@@ -26,9 +29,9 @@ class SafetyCheck(BaseCheck):
         # S003: FileRead/FileOpen without try/catch (v1 command form only — function calls are fine)
         io_funcs = re.finditer(r"\b(FileRead|FileOpen|FileAppend|FileDelete|FileMove)\b", source)
         for m in io_funcs:
-            line_num = source[:m.start()].count("\n") + 1
+            line_num = source[: m.start()].count("\n") + 1
             # Skip if used as function call: FileRead(...) not FileRead, output, input
-            after = source[m.end():m.end() + 3]
+            after = source[m.end() : m.end() + 3]
             if after.startswith("("):
                 continue
             # Check if this line is inside a try block
@@ -43,7 +46,7 @@ class SafetyCheck(BaseCheck):
         lines = source.split("\n")
         depth = 0
         in_try = False
-        for i, line in enumerate(lines[:line_num]):
+        for _i, line in enumerate(lines[:line_num]):
             stripped = line.strip()
             if stripped.startswith("try") and stripped.endswith("{"):
                 in_try = True

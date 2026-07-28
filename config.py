@@ -2,7 +2,6 @@
 
 import tomllib
 from pathlib import Path
-from typing import Optional
 
 DEFAULT_CONFIG = {
     "checks": {
@@ -24,7 +23,7 @@ class LinterConfig:
         self.data = {**DEFAULT_CONFIG, **(data or {})}
 
     @classmethod
-    def load(cls, path: Optional[str] = None) -> "LinterConfig":
+    def load(cls, path: str | None = None) -> "LinterConfig":
         if path:
             p = Path(path)
             if p.exists():

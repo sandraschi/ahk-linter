@@ -1,8 +1,9 @@
 """Style checks — naming, formatting, conventions."""
 
 import re
-from typing import Optional
+
 from lark import Tree
+
 from checks.base import BaseCheck
 
 
@@ -11,7 +12,7 @@ class StyleCheck(BaseCheck):
         super().__init__(config)
         self.name = "style"
 
-    def run(self, source: str, ast: Optional[Tree]) -> list[dict]:
+    def run(self, source: str, ast: Tree | None) -> list[dict]:
         issues = []
         lines = source.split("\n")
 
@@ -28,7 +29,11 @@ class StyleCheck(BaseCheck):
 
             # S012: Long lines (>120 chars)
             if len(line.rstrip("\r\n")) > 120 and not stripped.startswith(";"):
-                issues.append(self._make_issue("S012", f"Line too long ({len(line.rstrip())} chars, max 120)", i))
+                issues.append(
+                    self._make_issue(
+                        "S012", f"Line too long ({len(line.rstrip())} chars, max 120)", i
+                    )
+                )
 
         # S013: Inconsistent brace style
         # Check if opening brace is on same line as control flow

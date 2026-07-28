@@ -5,7 +5,12 @@ description = "AutoHotkey v2 Linter — AST-based analysis, auto-fix, config, SA
 authors = [{name = "Sandra Schipal"}]
 license = {text = "MIT"}
 requires-python = ">=3.11"
-dependencies = ["lark>=1.1.0", "click>=8.0"]
+dependencies = [
+    "lark>=1.1.0",
+    "click>=8.0",
+    "fastapi>=0.139.0",
+    "uvicorn>=0.50.2",
+]
 
 [project.scripts]
 ahk-lint = "ahk_lint:cli"
@@ -16,3 +21,23 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["ahk_lint*"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.0",
+    "pre-commit>=4.0.0",
+    "pytest>=8.0.0",
+]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["tests/scrape_v1_corpus.py", "tests/llm_generation_test.py", "tests/mcp_feedback_loop.py", "tests/baseline_compare.py"]
+target-version = "py311"
+src = ["ahk_lint", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501", "B023", "B007", "F841"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

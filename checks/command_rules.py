@@ -3,8 +3,9 @@
 import json
 import re
 from pathlib import Path
-from typing import Optional
+
 from lark import Tree
+
 from checks.base import BaseCheck
 
 
@@ -24,29 +25,31 @@ class CommandRulesCheck(BaseCheck):
         with open(rules_path) as f:
             return json.load(f)
 
-    def run(self, source: str, ast: Optional[Tree]) -> list[dict]:
+    def run(self, source: str, ast: Tree | None) -> list[dict]:
         issues = []
-        for category_name, commands in self.rules.items():
+        for _category_name, commands in self.rules.items():
             for cmd_name, rule in commands.items():
                 if isinstance(rule, str):
                     # Simple deprecated message
-                    pattern = rf'\b{cmd_name}\b'
+                    pattern = rf"\b{cmd_name}\b"
                     for m in re.finditer(pattern, source, re.MULTILINE):
-                        line = source[:m.start()].count("\n") + 1
+                        line = source[: m.start()].count("\n") + 1
                         issues.append(self._make_issue(f"V1_{cmd_name}", rule, line))
                     continue
                 if isinstance(rule, dict) and "handler" in rule:
                     continue  # Complex handlers — skip for now
                 if isinstance(rule, dict):
                     # Command pattern: match "CommandName," at start of statement
-                    pattern = rf'(?m)^\s*{cmd_name},'
+                    pattern = rf"(?m)^\s*{cmd_name},"
                     for m in re.finditer(pattern, source):
-                        line = source[:m.start()].count("\n") + 1
+                        line = source[: m.start()].count("\n") + 1
                         to = rule.get("to", "Use v2 function syntax")
-                        issues.append(self._make_issue(
-                            f"V1_{cmd_name}",
-                            f"Use v2 function syntax: {to}",
-                            line,
-                            fixable=False
-                        ))
+                        issues.append(
+                            self._make_issue(
+                                f"V1_{cmd_name}",
+                                f"Use v2 function syntax: {to}",
+                                line,
+                                fixable=False,
+                            )
+                        )
         return issues

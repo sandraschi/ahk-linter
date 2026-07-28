@@ -1,8 +1,9 @@
 """v1→v2 syntax checks and auto-fixes."""
 
 import re
-from typing import Optional
+
 from lark import Tree
+
 from checks.base import BaseCheck
 
 
@@ -11,36 +12,68 @@ class V1SyntaxCheck(BaseCheck):
         super().__init__(config)
         self.name = "v1_syntax"
         self.patterns = [
-            ("W001", r"\bRandom\s*,\s*(\w+)", "Use var := Random() instead of Random, var",
-             lambda m: m.group(0).replace(f"Random, {m.group(1)}", f"{m.group(1)} := Random(") + ")"),
-            ("W002", r"\bStringSplit\s*,\s*(\w+)\s*,\s*(\w+)\s*,\s*(\w+)", "Use StrSplit() instead of StringSplit",
-             lambda m: f"{m.group(1)} := StrSplit({m.group(2)}, {m.group(3)})"),
-            ("W003", r"Gui\s*,\s*Add\s*,\s*(\w+)", "Use gui.Add() instead of Gui, Add",
-             None),
-            ("W004", r"\bIfEqual\s*(\w+)\s*,\s*(\w+)", "Use if (var = val) instead of IfEqual",
-             lambda m: f"if ({m.group(1)} = {m.group(2)})"),
-            ("W005", r"\bFileRead\s*,\s*(\w+)\s*,\s*(\w+)", "Use var := FileRead() instead of FileRead, var",
-             lambda m: f"{m.group(1)} := FileRead({m.group(2)})"),
-            ("W006", r"\bFormatTime\s*,\s*(\w+)", "Use var := FormatTime() instead of FormatTime, var",
-             lambda m: f"{m.group(1)} := FormatTime("),
+            (
+                "W001",
+                r"\bRandom\s*,\s*(\w+)",
+                "Use var := Random() instead of Random, var",
+                lambda m: (
+                    m.group(0).replace(f"Random, {m.group(1)}", f"{m.group(1)} := Random(") + ")"
+                ),
+            ),
+            (
+                "W002",
+                r"\bStringSplit\s*,\s*(\w+)\s*,\s*(\w+)\s*,\s*(\w+)",
+                "Use StrSplit() instead of StringSplit",
+                lambda m: f"{m.group(1)} := StrSplit({m.group(2)}, {m.group(3)})",
+            ),
+            ("W003", r"Gui\s*,\s*Add\s*,\s*(\w+)", "Use gui.Add() instead of Gui, Add", None),
+            (
+                "W004",
+                r"\bIfEqual\s*(\w+)\s*,\s*(\w+)",
+                "Use if (var = val) instead of IfEqual",
+                lambda m: f"if ({m.group(1)} = {m.group(2)})",
+            ),
+            (
+                "W005",
+                r"\bFileRead\s*,\s*(\w+)\s*,\s*(\w+)",
+                "Use var := FileRead() instead of FileRead, var",
+                lambda m: f"{m.group(1)} := FileRead({m.group(2)})",
+            ),
+            (
+                "W006",
+                r"\bFormatTime\s*,\s*(\w+)",
+                "Use var := FormatTime() instead of FormatTime, var",
+                lambda m: f"{m.group(1)} := FormatTime(",
+            ),
             ("W007", r"\bGosub\b", "Use function call instead of Gosub", None),
-            ("W008", r"%(\w+)%", "Use bare variable name instead of %var%",
-             lambda m: m.group(1)),
-            ("W009", r"Menu\s*,\s*Tray\s*,\s*(\w+)", 'Use A_TrayMenu instead of Menu, Tray',
-             lambda m: f"A_TrayMenu.{m.group(1)}"),
-            ("W010", r"SetTimer\s*,\s*(\w+)\s*,\s*(-?\d+)", "Use SetTimer(Func, period) instead of SetTimer, Label",
-             lambda m: f"SetTimer({m.group(1)}, {m.group(2)})"),
+            ("W008", r"%(\w+)%", "Use bare variable name instead of %var%", lambda m: m.group(1)),
+            (
+                "W009",
+                r"Menu\s*,\s*Tray\s*,\s*(\w+)",
+                "Use A_TrayMenu instead of Menu, Tray",
+                lambda m: f"A_TrayMenu.{m.group(1)}",
+            ),
+            (
+                "W010",
+                r"SetTimer\s*,\s*(\w+)\s*,\s*(-?\d+)",
+                "Use SetTimer(Func, period) instead of SetTimer, Label",
+                lambda m: f"SetTimer({m.group(1)}, {m.group(2)})",
+            ),
         ]
         self.fix_patterns = {p[0]: p for p in self.patterns if p[3]}
 
-    def run(self, source: str, ast: Optional[Tree]) -> list[dict]:
+    def run(self, source: str, ast: Tree | None) -> list[dict]:
         issues = []
         lines = source.split("\n")
         for rule_id, pattern, message, _ in self.patterns:
             for m in re.finditer(pattern, source, re.MULTILINE):
-                line = source[:m.start()].count("\n") + 1
+                line = source[: m.start()].count("\n") + 1
                 # Skip W008 on #Include lines (%A_ScriptDir% is valid v2 syntax)
-                if rule_id == "W008" and line <= len(lines) and lines[line - 1].strip().startswith("#Include"):
+                if (
+                    rule_id == "W008"
+                    and line <= len(lines)
+                    and lines[line - 1].strip().startswith("#Include")
+                ):
                     continue
                 fixable = rule_id in self.fix_patterns
                 issues.append(self._make_issue(rule_id, message, line, fixable=fixable))

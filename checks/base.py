@@ -1,6 +1,5 @@
 """Base check class."""
 
-from typing import Optional
 from lark import Tree
 
 
@@ -9,7 +8,7 @@ class BaseCheck:
         self.config = config
         self.name = self.__class__.__name__.replace("Check", "").lower()
 
-    def run(self, source: str, ast: Optional[Tree]) -> list[dict]:
+    def run(self, source: str, ast: Tree | None) -> list[dict]:
         """Run checks on the given source and AST."""
         raise NotImplementedError
 
@@ -17,7 +16,9 @@ class BaseCheck:
         """Apply auto-fixes. Return modified source."""
         return source
 
-    def _make_issue(self, rule: str, message: str, line: int, col: int = 1, fixable: bool = False) -> dict:
+    def _make_issue(
+        self, rule: str, message: str, line: int, col: int = 1, fixable: bool = False
+    ) -> dict:
         return {
             "rule": rule,
             "severity": self.config.check_severity(self.name),

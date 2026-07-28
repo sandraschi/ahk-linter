@@ -1,38 +1,36 @@
 #!/usr/bin/env python3
 """AHK Linter v2 — AST-based analysis, auto-fix, config, SARIF output."""
 
-import json
-import os
+import hashlib
 import re
 import sys
-import hashlib
 from pathlib import Path
-from typing import Optional
 
 import click
-from lark import Lark, Tree, Token, UnexpectedInput
-
-from checks.v1_syntax import V1SyntaxCheck
+from checks.command_rules import CommandRulesCheck
+from checks.dead_code import DeadCodeCheck
+from checks.function_renames import FunctionRenamesCheck, OldObjectModelCheck
 from checks.safety import SafetyCheck
 from checks.style import StyleCheck
-from checks.dead_code import DeadCodeCheck
-from checks.command_rules import CommandRulesCheck
-from checks.function_renames import FunctionRenamesCheck, OldObjectModelCheck
+from checks.v1_syntax import V1SyntaxCheck
 from config import LinterConfig
-from reporter import TerminalReporter, SARIFReporter, JSONReporter
+from lark import Lark, Tree, UnexpectedInput
 from lsp_client import LSPClient
+from reporter import JSONReporter, SARIFReporter, TerminalReporter
 
 
-def load_grammar() -> Optional[Lark]:
+def load_grammar() -> Lark | None:
     grammar_path = Path(__file__).parent / "grammar.lark"
     try:
         return Lark.open(grammar_path, parser="lalr", maybe_placeholders=True)
     except Exception as e:
-        click.echo(f"Warning: Grammar loading failed ({e}). Falling back to regex-only mode.", err=True)
+        click.echo(
+            f"Warning: Grammar loading failed ({e}). Falling back to regex-only mode.", err=True
+        )
         return None
 
 
-def parse_file(source: str, grammar: Optional[Lark]) -> Optional[Tree]:
+def parse_file(source: str, grammar: Lark | None) -> Tree | None:
     if grammar is None:
         return None
     try:
@@ -77,14 +75,16 @@ class Linter:
         ast = parse_file(source, self.grammar)
         if ast is None:
             source_hash = hashlib.md5(source.encode()).hexdigest()[:8]
-            issues.append({
-                "rule": "P001",
-                "severity": "warning",
-                "message": f"Could not parse file (hash: {source_hash}) — falling back to regex checks",
-                "line": 1,
-                "col": 1,
-                "fixable": False,
-            })
+            issues.append(
+                {
+                    "rule": "P001",
+                    "severity": "warning",
+                    "message": f"Could not parse file (hash: {source_hash}) — falling back to regex checks",
+                    "line": 1,
+                    "col": 1,
+                    "fixable": False,
+                }
+            )
 
         for check in self.checks:
             for issue in check.run(source, ast):
@@ -122,10 +122,17 @@ class Linter:
 @click.command()
 @click.argument("paths", nargs=-1, type=click.Path(exists=True))
 @click.option("--fix", is_flag=True, help="Auto-fix issues")
-@click.option("--format", "output_format", default="terminal", type=click.Choice(["terminal", "sarif", "json"]))
+@click.option(
+    "--format",
+    "output_format",
+    default="terminal",
+    type=click.Choice(["terminal", "sarif", "json"]),
+)
 @click.option("--config", "config_path", default=None, help="Config file path")
 @click.option("--backup", is_flag=True, default=True, help="Create .bak files when fixing")
-@click.option("--lsp", is_flag=True, help="Use thqby LSP server for deeper analysis (requires Node.js)")
+@click.option(
+    "--lsp", is_flag=True, help="Use thqby LSP server for deeper analysis (requires Node.js)"
+)
 def cli(paths, fix, output_format, config_path, backup, lsp):
     """ahk-lint: AutoHotkey v2 linter with AST analysis and auto-fix."""
     grammar = load_grammar()

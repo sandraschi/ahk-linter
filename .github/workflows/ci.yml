@@ -1,0 +1,24 @@
+name: CI
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+jobs:
+  check:
+    name: Lint and Test (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: latest
+          enable-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: uv sync --group dev
+      - run: uv run ruff check ahk_lint.py checks fixers config.py mcp_server.py lsp_client.py
+      - run: uv run ruff format --check ahk_lint.py checks fixers config.py mcp_server.py lsp_client.py
+      - run: uv run pytest -q --tb=short --ignore=tests/scrape_v1_corpus.py --ignore=tests/llm_generation_test.py --ignore=tests/phase4_corpus_test.py --ignore=tests/mcp_feedback_loop.py --ignore=tests/baseline_compare.py --ignore=tests/corpus_stats.py --ignore=tests/semgrep_scan.py

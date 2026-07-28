@@ -7,15 +7,19 @@ import json
 import logging
 import os
 import subprocess
-import uuid
 from pathlib import Path
-from typing import Optional
 
 logger = logging.getLogger("ahk-lint-lsp")
 
 LSP_SERVER_PATH = os.environ.get(
     "AHK_LSP_PATH",
-    str(Path(__file__).resolve().parent.parent / "vscode-autohotkey2-lsp" / "server" / "cli" / "cli.js"),
+    str(
+        Path(__file__).resolve().parent.parent
+        / "vscode-autohotkey2-lsp"
+        / "server"
+        / "cli"
+        / "cli.js"
+    ),
 )
 
 
@@ -24,13 +28,15 @@ class LSPClient:
 
     def __init__(self, node_path: str = "node"):
         self.node_path = node_path
-        self.proc: Optional[subprocess.Popen] = None
+        self.proc: subprocess.Popen | None = None
         self.buffer = ""
         self.request_id = 0
 
     def start(self):
         if not Path(LSP_SERVER_PATH).exists():
-            logger.warning(f"LSP server not found at {LSP_SERVER_PATH}. Install thqby's vscode-autohotkey2-lsp.")
+            logger.warning(
+                f"LSP server not found at {LSP_SERVER_PATH}. Install thqby's vscode-autohotkey2-lsp."
+            )
             return False
         try:
             self.proc = subprocess.Popen(
@@ -41,11 +47,14 @@ class LSPClient:
                 text=True,
             )
             # Initialize LSP
-            self._send_request("initialize", {
-                "processId": None,
-                "capabilities": {},
-                "rootUri": "file:///",
-            })
+            self._send_request(
+                "initialize",
+                {
+                    "processId": None,
+                    "capabilities": {},
+                    "rootUri": "file:///",
+                },
+            )
             # Initialized notification
             self._send_notification("initialized", {})
             logger.info("LSP server started")
@@ -67,34 +76,42 @@ class LSPClient:
         if not self.proc:
             return []
         # Open document
-        self._send_notification("textDocument/didOpen", {
-            "textDocument": {
-                "uri": f"file:///{file_path}",
-                "languageId": "ahk2",
-                "version": 1,
-                "text": source,
-            }
-        })
+        self._send_notification(
+            "textDocument/didOpen",
+            {
+                "textDocument": {
+                    "uri": f"file:///{file_path}",
+                    "languageId": "ahk2",
+                    "version": 1,
+                    "text": source,
+                }
+            },
+        )
         # Request diagnostics
-        result = self._send_request("textDocument/diagnostic", {
-            "textDocument": {"uri": f"file:///{file_path}"},
-        })
+        result = self._send_request(
+            "textDocument/diagnostic",
+            {
+                "textDocument": {"uri": f"file:///{file_path}"},
+            },
+        )
         # Parse diagnostics
         issues = []
         if result and "diagnosticCollection" in result:
             for diagnostic in result["diagnosticCollection"].get("diagnostics", []):
-                issues.append({
-                    "rule": "LSP",
-                    "severity": self._severity(diagnostic.get("severity", 2)),
-                    "message": diagnostic.get("message", ""),
-                    "line": diagnostic.get("range", {}).get("start", {}).get("line", 0) + 1,
-                    "col": diagnostic.get("range", {}).get("start", {}).get("character", 0) + 1,
-                    "fixable": False,
-                    "source": "LSP",
-                })
+                issues.append(
+                    {
+                        "rule": "LSP",
+                        "severity": self._severity(diagnostic.get("severity", 2)),
+                        "message": diagnostic.get("message", ""),
+                        "line": diagnostic.get("range", {}).get("start", {}).get("line", 0) + 1,
+                        "col": diagnostic.get("range", {}).get("start", {}).get("character", 0) + 1,
+                        "fixable": False,
+                        "source": "LSP",
+                    }
+                )
         return issues
 
-    def _send_request(self, method: str, params: dict) -> Optional[dict]:
+    def _send_request(self, method: str, params: dict) -> dict | None:
         if not self.proc or not self.proc.stdin:
             return None
         self.request_id += 1
@@ -119,7 +136,7 @@ class LSPClient:
         self.proc.stdin.write(header + data)
         self.proc.stdin.flush()
 
-    def _read_response(self) -> Optional[dict]:
+    def _read_response(self) -> dict | None:
         if not self.proc or not self.proc.stdout:
             return None
         # Read header
@@ -141,7 +158,9 @@ class LSPClient:
 
     @staticmethod
     def _severity(lsp_severity: int) -> str:
-        return {1: "error", 2: "warning", 3: "suggestion", 4: "suggestion"}.get(lsp_severity, "warning")
+        return {1: "error", 2: "warning", 3: "suggestion", 4: "suggestion"}.get(
+            lsp_severity, "warning"
+        )
 
     def __del__(self):
         self.stop()
