@@ -1,0 +1,145 @@
+rules:
+
+  # Rule 1: Command-style MsgBox (v1: comma-separated args)
+  - id: v1-msgbox-command
+    message: "MsgBox command syntax (v1). Use MsgBox(text) in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "MsgBox,"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 2: StringSplit command (v1-only)
+  - id: v1-stringsplit
+    message: "StringSplit command (v1). Use StrSplit() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "StringSplit,"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 3: Gui, Add command (v1 GUI syntax)
+  - id: v1-gui-add
+    message: "Gui, Add command (v1). Use guiObj.Add() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "Gui, Add,"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 4: Gosub statement (v1-only label mechanism)
+  - id: v1-gosub
+    message: "Gosub (v1). Use function calls in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "Gosub,"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 5: Goto statement (removed in v2)
+  - id: v1-goto
+    message: "Goto (v1). Removed in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "Goto,"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 6: SetTimer with label (v1 pattern)
+  - id: v1-settimer-label
+    message: "SetTimer with label (v1). Use SetTimer(func, interval) in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: 'SetTimer,\s*\w+\s*,'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 7: #NoEnv directive (banned in v2)
+  - id: v1-noenv
+    message: "#NoEnv is deprecated in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "#NoEnv"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 8: Legacy assignment ( = for assignment)
+  - id: v1-assignment
+    message: "Legacy = assignment. Use := in v2."
+    severity: WARNING
+    languages: [generic]
+    pattern-regex: '^\s*\w+\s+=\s+'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 9: StringLeft command
+  - id: v1-stringleft
+    message: "StringLeft (v1). Use SubStr() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: 'StringLeft\s*,'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 10: StringRight command
+  - id: v1-stringright
+    message: "StringRight (v1). Use SubStr() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: 'StringRight\s*,'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 11: StringMid command
+  - id: v1-stringmid
+    message: "StringMid (v1). Use SubStr() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: 'StringMid\s*,'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 12: AutoTrim directive (removed in v2)
+  - id: v1-autotrim
+    message: "AutoTrim removed in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern: "AutoTrim,"
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 13: IfEqual / IfExist / IfMsgBox (v1 comparison)
+  - id: v1-iflegacy
+    message: "IfEqual/IfExist/IfMsgBox (v1). Use if() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: '(IfEqual|IfExist|IfMsgBox)\s*,'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 14: Percent dereference (%var%)
+  - id: v1-percent-deref
+    message: "Percent dereference (v1 pseudo-array). Use Array[i] in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: '%\w+%'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 15: EnvAdd/EnvSub/EnvMult/EnvDiv (v1 math)
+  - id: v1-envmath
+    message: "EnvAdd/EnvSub/EnvMult/EnvDiv (v1). Use := with +,-,*,/ in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: '(EnvAdd|EnvSub|EnvMult|EnvDiv)\s*,'
+    paths:
+      include: ["*.ahk"]
+
+  # Rule 16: FileRead command form
+  - id: v1-fileread
+    message: "FileRead command (v1). Use FileRead() in v2."
+    severity: ERROR
+    languages: [generic]
+    pattern-regex: 'FileRead\s*,'
+    paths:
+      include: ["*.ahk"]

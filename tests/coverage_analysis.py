@@ -45,7 +45,9 @@ print(f"\nConverter rules: ~{converter_total} across {len(converter_categories)}
 for cat, count in sorted(converter_categories.items()):
     print(f"  {cat:25s} {count:4d}")
 
-print(f"\nCoverage ratio: {total_ours}/{converter_total} = {total_ours/converter_total*100:.0f}%")
+print(
+    f"\nCoverage ratio: {total_ours}/{converter_total} = {total_ours / converter_total * 100:.0f}%"
+)
 print(f"Missing categories: ~{converter_total - total_ours} patterns")
 
 # Estimate false negatives on the v1 test corpus
@@ -53,9 +55,11 @@ print(f"Missing categories: ~{converter_total - total_ours} patterns")
 
 print("\n--- False negative estimate ---")
 print(f"Of {converter_total} known v1→v2 patterns in the converter:")
-print(f"  200+ implemented in our linter (declarative rules)")
-print(f"  ~73 complex patterns require procedural handlers (GUI conversion, DllCall, etc.)")
-print(f"  ~52 remaining declarative patterns not yet extracted")
-print(f"")
-print(f"Estimated recall on v1 corpus: ~85% (most common patterns covered)")
-print(f"False negatives: complex patterns like GUI restructuring, label-to-function, DllCall arg rewriting")
+print("  200+ implemented in our linter (declarative rules)")
+print("  ~73 complex patterns require procedural handlers (GUI conversion, DllCall, etc.)")
+print("  ~52 remaining declarative patterns not yet extracted")
+print("")
+print("Estimated recall on v1 corpus: ~85% (most common patterns covered)")
+print(
+    "False negatives: complex patterns like GUI restructuring, label-to-function, DllCall arg rewriting"
+)

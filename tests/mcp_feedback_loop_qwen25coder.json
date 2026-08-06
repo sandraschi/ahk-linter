@@ -1,0 +1,95 @@
+{
+  "model": "qwen2.5-coder:latest",
+  "api_base": "http://localhost:11434/v1",
+  "n_examples": 10,
+  "results": [
+    {
+      "prompt": "Write an AutoHotkey v2 script that creates a simple GUI window with a button tha...",
+      "round1_errors": 2,
+      "round2_errors": 0,
+      "errors_fixed": 2,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AutoHotkey v2 script to rename all .txt files in a folder to .md....",
+      "round1_errors": 9,
+      "round2_errors": 0,
+      "errors_fixed": 9,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script that monitors a folder for new files and shows a tooltip ...",
+      "round1_errors": 3,
+      "round2_errors": 0,
+      "errors_fixed": 3,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AutoHotkey v2 script with a hotkey that opens a calculator and another ...",
+      "round1_errors": 4,
+      "round2_errors": 0,
+      "errors_fixed": 4,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script that reads a config file and displays the settings in a G...",
+      "round1_errors": 5,
+      "round2_errors": 0,
+      "errors_fixed": 5,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AutoHotkey v2 script to back up a directory to a timestamped zip file....",
+      "round1_errors": 3,
+      "round2_errors": 0,
+      "errors_fixed": 3,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script that clicks at specific coordinates every 30 seconds....",
+      "round1_errors": 4,
+      "round2_errors": 0,
+      "errors_fixed": 4,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script for a simple timer with start/stop/reset buttons....",
+      "round1_errors": 2,
+      "round2_errors": 0,
+      "errors_fixed": 2,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script that extracts data from a CSV file and shows it in a List...",
+      "round1_errors": 5,
+      "round2_errors": 0,
+      "errors_fixed": 5,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script that sends keystrokes to a specific window by title....",
+      "round1_errors": 6,
+      "round2_errors": 0,
+      "errors_fixed": 6,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    }
+  ],
+  "summary": {
+    "total_r1_errors": 43,
+    "total_r2_errors": 0,
+    "overall_fix_rate": 1.0,
+    "mean_fix_rate": 1.0,
+    "fully_fixed": 10,
+    "persistent_patterns": {}
+  }
+}

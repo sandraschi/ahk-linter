@@ -1,0 +1,126 @@
+{
+  "model": "llama3.2:3b",
+  "api_base": "http://localhost:11434/v1",
+  "n_examples": 10,
+  "results": [
+    {
+      "prompt": "Write an AutoHotkey v2 script that creates a simple GUI window with a button tha...",
+      "round1_errors": 3,
+      "round2_errors": 2,
+      "errors_fixed": 1,
+      "fix_rate": 0.3333333333333333,
+      "persistent_rules": [
+        "W008",
+        "W003"
+      ]
+    },
+    {
+      "prompt": "Write an AutoHotkey v2 script to rename all .txt files in a folder to .md....",
+      "round1_errors": 7,
+      "round2_errors": 0,
+      "errors_fixed": 7,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script that monitors a folder for new files and shows a tooltip ...",
+      "round1_errors": 5,
+      "round2_errors": 1,
+      "errors_fixed": 4,
+      "fix_rate": 0.8,
+      "persistent_rules": [
+        "W010"
+      ]
+    },
+    {
+      "prompt": "Write an AutoHotkey v2 script with a hotkey that opens a calculator and another ...",
+      "round1_errors": 6,
+      "round2_errors": 1,
+      "errors_fixed": 5,
+      "fix_rate": 0.8333333333333334,
+      "persistent_rules": [
+        "W010"
+      ]
+    },
+    {
+      "prompt": "Write an AHK v2 script that reads a config file and displays the settings in a G...",
+      "round1_errors": 2,
+      "round2_errors": 2,
+      "errors_fixed": 0,
+      "fix_rate": 0.0,
+      "persistent_rules": [
+        "W005",
+        "V1_FileRead"
+      ]
+    },
+    {
+      "prompt": "Write an AutoHotkey v2 script to back up a directory to a timestamped zip file....",
+      "round1_errors": 18,
+      "round2_errors": 3,
+      "errors_fixed": 15,
+      "fix_rate": 0.8333333333333334,
+      "persistent_rules": [
+        "W008",
+        "S003"
+      ]
+    },
+    {
+      "prompt": "Write an AHK v2 script that clicks at specific coordinates every 30 seconds....",
+      "round1_errors": 6,
+      "round2_errors": 0,
+      "errors_fixed": 6,
+      "fix_rate": 1.0,
+      "persistent_rules": []
+    },
+    {
+      "prompt": "Write an AHK v2 script for a simple timer with start/stop/reset buttons....",
+      "round1_errors": 4,
+      "round2_errors": 2,
+      "errors_fixed": 2,
+      "fix_rate": 0.5,
+      "persistent_rules": [
+        "V1_WinMinimize",
+        "W008"
+      ]
+    },
+    {
+      "prompt": "Write an AHK v2 script that extracts data from a CSV file and shows it in a List...",
+      "round1_errors": 6,
+      "round2_errors": 5,
+      "errors_fixed": 1,
+      "fix_rate": 0.16666666666666666,
+      "persistent_rules": [
+        "W005",
+        "W008",
+        "S003",
+        "V1_FileRead"
+      ]
+    },
+    {
+      "prompt": "Write an AHK v2 script that sends keystrokes to a specific window by title....",
+      "round1_errors": 5,
+      "round2_errors": 1,
+      "errors_fixed": 4,
+      "fix_rate": 0.8,
+      "persistent_rules": [
+        "W008"
+      ]
+    }
+  ],
+  "summary": {
+    "total_r1_errors": 62,
+    "total_r2_errors": 17,
+    "overall_fix_rate": 0.7258064516129032,
+    "mean_fix_rate": 0.6266666666666667,
+    "fully_fixed": 2,
+    "persistent_patterns": {
+      "W008": 5,
+      "W010": 2,
+      "W005": 2,
+      "V1_FileRead": 2,
+      "S003": 2,
+      "W003": 1,
+      "V1_WinMinimize": 1
+    }
+  }
+}

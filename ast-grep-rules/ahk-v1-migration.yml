@@ -1,0 +1,44 @@
+# ast-grep rules for detecting AHK v1 syntax patterns
+# Run: sg scan tests/fixtures/v1_corpus_external/ --rule ast-grep-rules/ahk-v1-migration.yml --json > tests/ast-grep-results.json
+
+id: ahk-v1-migration
+language: ahk
+message: "v1 syntax pattern: $MESSAGE"
+severity: error
+rules:
+
+  # Rule 1: Command-style MsgBox (v1: comma-separated args)
+  - id: v1-msgbox-command
+    pattern: "MsgBox, $$$ARGS"
+    message: "MsgBox command syntax (v1). Use MsgBox(text) in v2."
+    severity: error
+
+  # Rule 2: StringSplit command
+  - id: v1-stringsplit
+    pattern: "StringSplit, $OUT, $IN, $$$DELIMS"
+    message: "StringSplit command (v1). Use StrSplit() function in v2."
+    severity: error
+
+  # Rule 3: Gui, Add command
+  - id: v1-gui-add
+    pattern: "Gui, Add, $$$ARGS"
+    message: "Gui, Add command (v1). Use guiObj.Add() in v2."
+    severity: error
+
+  # Rule 4: Gosub statement
+  - id: v1-gosub
+    pattern: "Gosub, $LABEL"
+    message: "Gosub (v1). Use function calls in v2."
+    severity: error
+
+  # Rule 5: Legacy SetTimer with label
+  - id: v1-settimer-label
+    pattern: "SetTimer, $LABEL, $INTERVAL"
+    message: "SetTimer with label (v1). Use SetTimer(func, interval) in v2."
+    severity: error
+
+  # Rule 6: Legacy assignment with =
+  - id: v1-assignment
+    pattern: "$VAR = $VAL"
+    message: "Legacy assignment (v1). Use := for assignment in v2."
+    severity: error

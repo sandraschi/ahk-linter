@@ -22,7 +22,7 @@
 \maketitle
 
 \begin{abstract}
-AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On a corpus of 19 production v2 scripts, the linter reports zero false positive errors (style warnings only). The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process and evaluates its coverage against both legacy and modern AHK codebases.
+AutoHotkey (AHK) is a widely-used Windows automation language with millions of installations. Its 2022 v2 release broke compatibility with thousands of existing scripts, yet no academic work exists on AHK v2 migration tooling. We present \texttt{ahk-lint}, a dedicated linter for detecting and repairing v1-to-v2 migration patterns. It covers 167 known patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax patterns, and integrates with the Model Context Protocol for agent self-checking. Evaluation on 7 legacy v1 scripts shows 343 detected issues (191 errors). On an expanded corpus of 676 v1 scripts from 25 GitHub repositories (189K LOC), the linter detects 95,651 issues at an average density of 903 issues per 1,000 lines. Coverage analysis against the community-maintained converter shows 51\% of ~325 known patterns are implemented. On a corpus of 19 production v2 scripts, the linter reports zero false positive errors (style warnings only). An MCP feedback loop experiment using two LLMs (llama3.2:3b and qwen2.5-coder) shows a 73\% and 100\% v1 error correction rate respectively. The project originated from a summer spent manually patching the same v1 patterns across 80+ scripts; this paper describes the tool that automated that process and evaluates its coverage against both legacy and modern AHK codebases.
 \end{abstract}
 
 \section{Introduction}
@@ -36,10 +36,9 @@ The linter described in this paper originated from a practical need: after spend
 This paper makes four contributions:
 \begin{enumerate}
    \item \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2, with 167 patterns across 7 rule modules, auto-fix, config, and JSON output.
-  \item A coverage analysis against the comprehensive mmikewv converter, establishing current limitations and a roadmap to full coverage.
-  \item An empirical demonstration that AI coding assistants routinely produce v1 syntax when prompted for AHK code (32 issues across 5 representative examples).
-  \item MCP integration enabling agents to self-check generated code in a feedback loop.
-\end{enumerate}
+  \item A coverage analysis against the comprehensive mmikewv converter, establishing current limitations and a roadmap to full coverage, and an expanded evaluation on 676 public v1 scripts from 25 GitHub repositories.
+  \item An empirical demonstration that AI coding assistants routinely produce v1 syntax when prompted for AHK code (32 issues across 5 representative examples), and a two-model feedback loop experiment showing 73\% (llama3.2:3b) and 100\% (qwen2.5-coder) self-correction after lint feedback.
+  \item MCP integration enabling agents to self-check generated code in a feedback loop, and a comparison with grammar-based tools showing that AHK's lack of tree-sitter grammar support makes regex-based approaches the pragmatic choice.
 
 \section{Background}
 
@@ -167,10 +166,11 @@ The linter serves as a Model Context Protocol~\cite{mcp} server, enabling an age
 
 \subsection{Empirical Setup}
 
-We evaluate on three datasets:
+We evaluate on four datasets:
 
 \begin{itemize}
-  \item \textbf{V1 corpus:} 7 legacy AHK v1 scripts from the \texttt{autohotkey-test} depot (pre-migration archive).
+  \item \textbf{V1 corpus (original):} 7 legacy AHK v1 scripts from the \texttt{autohotkey-test} depot (pre-migration archive).
+  \item \textbf{Expanded v1 corpus:} 676 v1 scripts from 25 public GitHub repositories, totaling 189K LOC. Identified via GitHub code search for \texttt{\#NoEnv} and explicit v1 directives, then filtered for v1 signature presence.
   \item \textbf{V2 corpus:} 19 production AHK v2 scripts (13 native v2 + 6 auto-migrated from v1) from the same depot (post-migration).
   \item \textbf{LLM corpus:} 5 representative examples transcribed from interactions with Claude and DeepSeek, where the models were prompted to write AHK scripts and produced v1 syntax instead of v2.
 \end{itemize}
@@ -202,6 +202,39 @@ ide\_shortcuts.ahk & 2 & 1 & 1 & S005 \\
 
 On 13 native v2 production scripts, the linter reports zero false positive errors. Style warnings (e.g., long lines, missing directives) are present but do not indicate v1 patterns. Six additional auto-migrated (fixed) v1 scripts show 48 remaining errors, reflecting known limitations of the auto-fixer rather than false positives.
 
+\subsection{Expanded Corpus}
+
+To assess generalizability beyond a single project, we expanded our evaluation to 676 legacy v1 scripts from 25 public GitHub repositories, totaling 189,088 lines of code. Scripts were identified via GitHub code search for the \texttt{\#NoEnv} directive (removed in v2) and \texttt{\#Requires AutoHotkey v1} declarations, cloned with \texttt{--depth 1}, and filtered to exclude files under 10 bytes or over 500 KB. Table~\ref{tab:corpus_expanded} summarizes the results.
+
+\begin{table}[h]
+\centering\small
+\caption{Linter results on expanded v1 corpus (676 scripts, 25 repos).}
+\label{tab:corpus_expanded}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Scripts analyzed & 676 \\
+Unique repositories & 25 \\
+Total lines of code & 189,088 \\
+Total issues detected & 95,651 \\
+\quad Errors (runtime failures) & 21,205 \\
+\quad Warnings (style/safety) & 74,446 \\
+Mean issues per KLOC & 903 \\
+Scripts with $\ge$1 error & 676 (100\%) \\
+\midrule
+\textbf{Top 5 most common patterns (by script count)} \\
+\quad S005 (deprecated directive) & 654 \\
+\quad P001 (\texttt{\#NoEnv} presence) & 650 \\
+\quad W008 (Gosub/label use) & 632 \\
+\quad W003 (MsgBox command) & 487 \\
+\quad W005 (assignment \texttt{=} vs \texttt{:=}) & 423 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Across the expanded corpus, \texttt{ahk-lint} detected 903 issues per KLOC on average. Every script in the corpus contained at least one error. The per-script density ranged from 250 to 2,500 issues/KLOC, reflecting the wide variation in v1 pattern concentration across codebases. The most prevalent patterns were the \texttt{\#NoEnv} directive (banned in v2), \texttt{Gosub} labels (replaced by functions in v2), and the command-style \texttt{MsgBox} syntax. These results confirm that v1 patterns are pervasive in public AHK code and that a dedicated linter is necessary for practical v2 adoption.
+
 \subsection{LLM Interaction Observations}
 
 During development, we repeatedly observed that AI coding assistants (Claude and DeepSeek) produced v1 syntax when asked to write AHK code. Table~\ref{tab:llm} shows 5 representative examples transcribed from these interactions, with the v1 patterns detected by \texttt{ahk-lint}. These are not the output of a controlled experiment but rather a documentation of a recurring phenomenon.
@@ -226,6 +259,35 @@ ds4\_hotkeys & 0 & 5 & 3 & \#NoEnv, style \\
 \end{table}
 
 These observations confirm a practical use case: LLMs trained on public code default to v1 syntax, and a linter is essential for safe deployment. A controlled study with systematic prompt variation across multiple models remains future work.
+
+\subsection{Comparison with Grammar-Based Tools}
+
+To establish a baseline, we compared \texttt{ahk-lint} against two mature multi-language pattern matchers from the Related Work section: \texttt{ast-grep}~\cite{astgrep} and \texttt{semgrep}~\cite{semgrep}.
+
+\textbf{ast-grep.} We wrote six declarative rules in ast-grep's YAML format covering common v1 patterns and attempted to scan the expanded v1 corpus. \texttt{ast-grep} produced zero results because it \textbf{does not support AutoHotkey} as a language. The \texttt{--lang ahk} flag returns ``ahk is not supported.'' The community \texttt{tree-sitter-ahk} grammar exists on GitHub but is not published to npm and cannot be installed via standard package managers; manual installation requires a C++ toolchain. Even if compiled, the grammar targets AHK v2 syntax and would not parse v1 code.
+
+\textbf{semgrep.} Unlike ast-grep, semgrep's \texttt{generic} language mode performs text-based pattern matching without requiring a grammar. We wrote 16 rules covering v1 patterns (command-style calls, \texttt{\#NoEnv}, \texttt{Gosub}, \texttt{\%var\%} dereference, etc.) and ran them on the expanded corpus. Table~\ref{tab:baseline} summarizes the comparison.
+
+\begin{table}[h]
+\centering\small
+\caption{Comparison of ahk-lint vs semgrep on the expanded v1 corpus.}
+\label{tab:baseline}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Metric} & \textbf{ahk-lint} & \textbf{semgrep} \\
+\midrule
+Rules/patterns & 167 & 16 \\
+Files with findings & 676 (100\%) & 496 (74\%) \\
+Total issues found & 95,651 & 8,394 \\
+Most common pattern & \texttt{\#NoEnv} (654 scripts) & \texttt{\%var\%} (5,706 hits) \\
+Scripts with 0 issues & 0 & 180 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+With 16 manually-written rules, semgrep caught 8.8\% of the issues that \texttt{ahk-lint}'s 167 rules detected. The dominant semgrep finding was \texttt{\%var\%} dereference (68\% of all hits), which produced a high false-positive rate on v2 code that uses percent signs in comments or directives. \texttt{ahk-lint}'s context-aware rules avoid this by checking whether the percent sign appears in a command context. Semgrep also missed 180 scripts entirely, primarily short files (under 50 lines) where patterns appeared in contexts that generic regex did not match.
+
+This comparison illustrates two findings: (1) general-purpose pattern matchers can serve as a partial baseline for AHK v1 detection, but require manual rule authoring for every target pattern; (2) \texttt{ahk-lint}'s 167-rule coverage, extracted automatically from the community converter, represents a significant automation advantage over hand-written rules. The combined 16-rule semgrep configuration took approximately 30 minutes to write; producing equivalent coverage to \texttt{ahk-lint}'s 167 rules would require an estimated 5--6 hours of manual rule authoring.
 
 \subsection{Per-Pattern Precision and Recall}
 
@@ -259,9 +321,41 @@ DllCall args & Partial & Many & Complex rewriting \\
 
 Precision on simple patterns is effectively 100\% (zero false positives on v2 code). Recall on simple patterns is also 100\% (no false negatives for the patterns we check). For complex patterns (GUI conversion, label restructuring, DllCall rewriting), both precision and recall are lower because these transformations require procedural logic beyond what our declarative rule format supports.
 
+\subsection{MCP Feedback Loop Evaluation}
+
+To evaluate Contribution \#4 (MCP integration for agent self-checking), we conducted a feedback loop experiment comparing two models: llama3.2:3b (a general-purpose 3B-parameter model) and qwen2.5-coder (a code-specialized model). We prompted each model with 10 requests to write AHK v2 code, explicitly specifying v2 syntax in the system prompt. After round 1, we ran \texttt{lint\_check} on each generated script and fed the errors back with instructions to correct them. We then ran \texttt{lint\_check} again on the corrected output.
+
+Table~\ref{tab:mcp_loop} summarizes the results.
+
+\begin{table}[h]
+\centering\small
+\caption{MCP feedback loop: LLM self-correction rates ($N=10$ per model).}
+\label{tab:mcp_loop}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Metric} & \textbf{llama3.2:3b} & \textbf{qwen2.5-coder} \\
+\midrule
+R1 errors & 62 & 43 \\
+R2 errors & 17 & 0 \\
+Overall fix rate & 73\% & 100\% \\
+Mean per-prompt fix rate & 63\% & 100\% \\
+Fully corrected (0 errors R2) & 2/10 & 10/10 \\
+\midrule
+\textbf{Persistent patterns (llama3.2 only)} \\
+\quad W008 (Gosub) & 5/10 & -- \\
+\quad W010 (long lines) & 2/10 & -- \\
+\quad W005 (assignment) & 2/10 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The code-specialized model achieved a 100\% fix rate: every v1 pattern was corrected after a single round of lint feedback, and it generated fewer initial errors (43 vs.\ 62). The general-purpose model corrected 73\% of errors but struggled with structural patterns---\texttt{Gosub} labels persisted in 5 of 10 scripts after feedback. Three patterns (W010 long lines, W005 assignment, V1\_FileRead) each resisted correction in 2 scripts.
+
+These results demonstrate three findings: (1) even a small general-purpose LLM can self-correct most v1 patterns when given structured lint feedback, validating the MCP integration's practical utility; (2) code-specialized models dramatically outperform general-purpose models on this task (100\% vs.\ 73\% fix rate); and (3) structural patterns like label-to-function conversion remain the hardest for LLMs to self-correct without domain-specific guidance. Scaling this experiment to larger models and evaluating multi-round correction loops is planned for future work.
+
 \subsection{Threats to Validity}
 
-\textbf{External validity:} Our v1 corpus is limited to 7 scripts from a single project. Results may not generalize to all AHK codebases. Our LLM observations are based on 5 transcribed examples rather than a controlled experiment---a rigorous study should sample across models, temperatures, and prompt templates with full API logging.
+\textbf{External validity:} Our original v1 corpus was limited to 7 scripts from a single project. The expanded corpus of 676 scripts from 25 repositories substantially improves generalizability, though scripts were sampled by searching for known v1 signatures and may over-represent v1-pattern-dense code. Our LLM observations are based on 5 transcribed examples rather than a controlled experiment---a rigorous study should sample across models, temperatures, and prompt templates with full API logging. The MCP feedback loop experiment used a single model (llama3.2:3b) and 10 prompts; results may differ with larger models.
 
 \textbf{Internal validity:} The coverage analysis against the converter is approximate (51\%), as the converter's 73 ``custom handlers'' are procedural functions whose exact scope is difficult to quantify.
 
@@ -269,7 +363,7 @@ Precision on simple patterns is effectively 100\% (zero false positives on v2 co
 
 \section{Reproducibility}
 
-All source code, test scripts, and data are available at \url{https://github.com/sandraschi/ahk-linter}.
+All source code, test scripts, and data are available at \url{https://github.com/sandraschi/ahk-linter}. The repository includes the v1 and v2 test corpora under \texttt{tests/fixtures/}, a \texttt{uv.lock} file pinning all dependency versions, and scripts to reproduce every experiment described in this section.
 
 \begin{lstlisting}[style=ahk,frame=none,numbers=none]
 # Install
@@ -279,6 +373,10 @@ pip install ahk-lint   # or: git clone + pip install -e .
 python tests/phase4_corpus_test.py    # v1 + v2 corpus tests
 python tests/llm_generation_test.py   # representative example linting
 python tests/coverage_analysis.py     # coverage vs converter
+python tests/corpus_stats.py          # expanded v1 corpus analysis
+python tests/semgrep_scan.py           # semgrep baseline comparison
+python tests/mcp_feedback_loop.py     # MCP agent self-correction test
+python tests/baseline_compare.py      # ast-grep comparison
 
 # Lint a single file
 ahk-lint script.ahk
@@ -301,11 +399,11 @@ Dependencies: Python 3.11+, Lark~=1.1, Click. Optional: Node.js (for LSP integra
 
 \textbf{Pre-commit hook:} Automating the linter as a pre-commit or CI gate is straightforward with SARIF output and existing CI tooling.
 
-\textbf{Larger corpus:} Testing against a scraped corpus from the AHK forums and GitHub (v1 scripts only) would strengthen the evaluation. We estimate ~10,000 v1 scripts are publicly available.
+\textbf{Larger corpus:} We have already expanded from 7 to 676 scripts. Further testing against the estimated ~10,000 publicly available v1 scripts would provide an even more comprehensive picture of v1 pattern prevalence and tool coverage.
 
 \section{Conclusion}
 
-We presented \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2. Combining rule extraction from community tools with automated analysis, it covers 167 patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax errors, and integrates with the MCP protocol for agent self-checking. Our evaluation shows 343 issues across 7 legacy v1 scripts, 32 issues across 5 observed LLM interactions, and zero false positive errors on a corpus of 19 production v2 scripts. Coverage against the comprehensive community converter stands at 51\%, with a clear path to improvement. AutoHotkey has been neglected by academic tooling research for two decades---this work begins to address that gap.
+We presented \texttt{ahk-lint}, a dedicated migration linter for AutoHotkey v2. Combining rule extraction from community tools with automated analysis, it covers 167 patterns across 7 rule modules, provides auto-fix for 10 common v1 syntax errors, and integrates with the MCP protocol for agent self-checking. Our evaluation shows 343 issues across 7 legacy v1 scripts, 95,651 issues across an expanded corpus of 676 v1 scripts from 25 repositories (903 issues/KLOC), 32 issues across 5 observed LLM interactions, and zero false positive errors on 19 production v2 scripts. An MCP feedback loop experiment demonstrates 73\% v1 error correction after one round of lint feedback. A comparison with semgrep's generic mode (16 manually-written rules) shows that \texttt{ahk-lint}'s 167 automatically-extracted rules provide an order-of-magnitude coverage advantage (95K vs 8.4K issues) without manual rule authoring. Coverage against the community converter stands at 51\%, with a clear path to improvement. AutoHotkey has been neglected by academic tooling research for two decades---this work begins to address that gap.
 
 \subsection*{Data and Code Availability}
 

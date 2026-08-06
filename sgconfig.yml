@@ -1,0 +1,7 @@
+# sgconfig.yml — ast-grep configuration for AHK
+# tree-sitter-ahk grammar is NOT available via npm and cannot be installed
+# (requires C++ compilation: node-gyp, tree-sitter CLI, platform-specific bindings).
+# This means ast-grep cannot parse .ahk files.
+
+ruleDirs:
+  - ast-grep-rules

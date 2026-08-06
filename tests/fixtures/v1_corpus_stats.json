@@ -1,0 +1,8775 @@
+[
+  {
+    "file": "adampash_texter_about_GUI.ahk",
+    "loc": 23,
+    "total": 7,
+    "errors": 4,
+    "warnings": 3,
+    "density": 304.34782608695656,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_addtobank.ahk",
+    "loc": 15,
+    "total": 31,
+    "errors": 19,
+    "warnings": 12,
+    "density": 2066.666666666667,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_buildactive.ahk",
+    "loc": 76,
+    "total": 136,
+    "errors": 96,
+    "warnings": 40,
+    "density": 1789.4736842105262,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_bundles.ahk",
+    "loc": 236,
+    "total": 353,
+    "errors": 184,
+    "warnings": 169,
+    "density": 1495.7627118644068,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_delfrombank.ahk",
+    "loc": 12,
+    "total": 26,
+    "errors": 17,
+    "warnings": 9,
+    "density": 2166.6666666666665,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_disable.ahk",
+    "loc": 18,
+    "total": 17,
+    "errors": 9,
+    "warnings": 8,
+    "density": 944.4444444444445,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "adampash_texter_disablechecks.ahk",
+    "loc": 14,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 285.7142857142857,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_enabletriggers.ahk",
+    "loc": 21,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 285.7142857142857,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_export.ahk",
+    "loc": 63,
+    "total": 78,
+    "errors": 53,
+    "warnings": 25,
+    "density": 1238.095238095238,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_getfilelist.ahk",
+    "loc": 19,
+    "total": 19,
+    "errors": 8,
+    "warnings": 11,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_getvalfromini.ahk",
+    "loc": 11,
+    "total": 17,
+    "errors": 9,
+    "warnings": 8,
+    "density": 1545.4545454545455,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_help_GUI.ahk",
+    "loc": 28,
+    "total": 9,
+    "errors": 3,
+    "warnings": 6,
+    "density": 321.42857142857144,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_hexall.ahk",
+    "loc": 29,
+    "total": 42,
+    "errors": 30,
+    "warnings": 12,
+    "density": 1448.2758620689656,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_hexify.ahk",
+    "loc": 32,
+    "total": 52,
+    "errors": 23,
+    "warnings": 29,
+    "density": 1625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_import.ahk",
+    "loc": 57,
+    "total": 68,
+    "errors": 52,
+    "warnings": 16,
+    "density": 1192.982456140351,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_InsSpecKeys.ahk",
+    "loc": 58,
+    "total": 9,
+    "errors": 7,
+    "warnings": 2,
+    "density": 155.17241379310346,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_InstallAutocorrect.ahk",
+    "loc": 58,
+    "total": 80,
+    "errors": 29,
+    "warnings": 51,
+    "density": 1379.3103448275863,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_management_GUI.ahk",
+    "loc": 284,
+    "total": 174,
+    "errors": 91,
+    "warnings": 83,
+    "density": 612.6760563380282,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_MonitorWindows.ahk",
+    "loc": 10,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 600.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_newkey_GUI.ahk",
+    "loc": 84,
+    "total": 69,
+    "errors": 41,
+    "warnings": 28,
+    "density": 821.4285714285714,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_preferences_GUI.ahk",
+    "loc": 149,
+    "total": 121,
+    "errors": 71,
+    "warnings": 50,
+    "density": 812.0805369127518,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_printable.ahk",
+    "loc": 37,
+    "total": 62,
+    "errors": 43,
+    "warnings": 19,
+    "density": 1675.6756756756756,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_printablelist.ahk",
+    "loc": 65,
+    "total": 147,
+    "errors": 89,
+    "warnings": 58,
+    "density": 2261.5384615384614,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_renameHotstring.ahk",
+    "loc": 50,
+    "total": 25,
+    "errors": 9,
+    "warnings": 16,
+    "density": 500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_resources.ahk",
+    "loc": 33,
+    "total": 29,
+    "errors": 17,
+    "warnings": 12,
+    "density": 878.7878787878788,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_savehotstring.ahk",
+    "loc": 89,
+    "total": 103,
+    "errors": 30,
+    "warnings": 73,
+    "density": 1157.3033707865168,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_texter.ahk",
+    "loc": 559,
+    "total": 522,
+    "errors": 181,
+    "warnings": 341,
+    "density": 933.8103756708408,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W007"
+    ]
+  },
+  {
+    "file": "adampash_texter_TexterInstaller.ahk",
+    "loc": 63,
+    "total": 34,
+    "errors": 20,
+    "warnings": 14,
+    "density": 539.6825396825396,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "adampash_texter_textprompt_GUI.ahk",
+    "loc": 27,
+    "total": 22,
+    "errors": 6,
+    "warnings": 16,
+    "density": 814.8148148148148,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "adampash_texter_updatecheck.ahk",
+    "loc": 36,
+    "total": 40,
+    "errors": 15,
+    "warnings": 25,
+    "density": 1111.111111111111,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "AfterLemon_Class_Console_Class_Console.ahk",
+    "loc": 348,
+    "total": 547,
+    "errors": 141,
+    "warnings": 406,
+    "density": 1571.8390804597702,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "AfterLemon_Class_Console_Demo_1.ahk",
+    "loc": 48,
+    "total": 8,
+    "errors": 3,
+    "warnings": 5,
+    "density": 166.66666666666666,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AfterLemon_Class_Console_Demo_2.ahk",
+    "loc": 22,
+    "total": 7,
+    "errors": 3,
+    "warnings": 4,
+    "density": 318.1818181818182,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_ASCII.ahk",
+    "loc": 67,
+    "total": 54,
+    "errors": 6,
+    "warnings": 48,
+    "density": 805.9701492537314,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_ASCII85.ahk",
+    "loc": 213,
+    "total": 150,
+    "errors": 4,
+    "warnings": 146,
+    "density": 704.225352112676,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S011"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_Base64.ahk",
+    "loc": 22,
+    "total": 15,
+    "errors": 7,
+    "warnings": 8,
+    "density": 681.8181818181818,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W008"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_BinHex.ahk",
+    "loc": 35,
+    "total": 13,
+    "errors": 8,
+    "warnings": 5,
+    "density": 371.42857142857144,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W003"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_Caesar.ahk",
+    "loc": 9,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 444.4444444444444,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_CalcHash.ahk",
+    "loc": 74,
+    "total": 74,
+    "errors": 7,
+    "warnings": 67,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_CRC32.ahk",
+    "loc": 52,
+    "total": 65,
+    "errors": 17,
+    "warnings": 48,
+    "density": 1250.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_Dec.ahk",
+    "loc": 31,
+    "total": 23,
+    "errors": 4,
+    "warnings": 19,
+    "density": 741.9354838709678,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_Div2.ahk",
+    "loc": 70,
+    "total": 62,
+    "errors": 10,
+    "warnings": 52,
+    "density": 885.7142857142857,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_HMAC.ahk",
+    "loc": 19,
+    "total": 13,
+    "errors": 3,
+    "warnings": 10,
+    "density": 684.2105263157895,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_LHash.ahk",
+    "loc": 68,
+    "total": 57,
+    "errors": 18,
+    "warnings": 39,
+    "density": 838.2352941176471,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_libcrypt.ahk",
+    "loc": 1357,
+    "total": 936,
+    "errors": 104,
+    "warnings": 832,
+    "density": 689.7568165070007,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_make.ahk",
+    "loc": 27,
+    "total": 28,
+    "errors": 14,
+    "warnings": 14,
+    "density": 1037.037037037037,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_MD2.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_MD4.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_MD5.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_nnnik21.ahk",
+    "loc": 75,
+    "total": 64,
+    "errors": 2,
+    "warnings": 62,
+    "density": 853.3333333333334,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_RC4.ahk",
+    "loc": 41,
+    "total": 48,
+    "errors": 13,
+    "warnings": 35,
+    "density": 1170.7317073170732,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_ROT.ahk",
+    "loc": 45,
+    "total": 36,
+    "errors": 7,
+    "warnings": 29,
+    "density": 800.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_RSHash.ahk",
+    "loc": 5,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 600.0,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_SecureSalted.ahk",
+    "loc": 15,
+    "total": 23,
+    "errors": 8,
+    "warnings": 15,
+    "density": 1533.3333333333335,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_SHA-1.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_SHA-256.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_SHA-384.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_SHA-512.ahk",
+    "loc": 16,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetBatchLines"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_SoupRot.ahk",
+    "loc": 134,
+    "total": 130,
+    "errors": 3,
+    "warnings": 127,
+    "density": 970.1492537313433,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_TEA.ahk",
+    "loc": 16,
+    "total": 19,
+    "errors": 10,
+    "warnings": 9,
+    "density": 1187.5,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_URI.ahk",
+    "loc": 39,
+    "total": 22,
+    "errors": 4,
+    "warnings": 18,
+    "density": 564.1025641025641,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_Vigenere.ahk",
+    "loc": 23,
+    "total": 22,
+    "errors": 7,
+    "warnings": 15,
+    "density": 956.5217391304349,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_VxE.ahk",
+    "loc": 120,
+    "total": 11,
+    "errors": 9,
+    "warnings": 2,
+    "density": 91.66666666666666,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ahkscript_libcrypt.ahk_XOR.ahk",
+    "loc": 31,
+    "total": 25,
+    "errors": 6,
+    "warnings": 19,
+    "density": 806.4516129032257,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Aac.ahk",
+    "loc": 96,
+    "total": 74,
+    "errors": 11,
+    "warnings": 63,
+    "density": 770.8333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Acc.ahk",
+    "loc": 349,
+    "total": 252,
+    "errors": 16,
+    "warnings": 236,
+    "density": 722.0630372492836,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Alert.ahk",
+    "loc": 35,
+    "total": 29,
+    "errors": 2,
+    "warnings": 27,
+    "density": 828.5714285714287,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Async.ahk",
+    "loc": 8,
+    "total": 7,
+    "errors": 2,
+    "warnings": 5,
+    "density": 875.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Autorun.ahk",
+    "loc": 21,
+    "total": 12,
+    "errors": 2,
+    "warnings": 10,
+    "density": 571.4285714285714,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_AutoType.ahk",
+    "loc": 119,
+    "total": 103,
+    "errors": 3,
+    "warnings": 100,
+    "density": 865.546218487395,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Base32.ahk",
+    "loc": 39,
+    "total": 31,
+    "errors": 2,
+    "warnings": 29,
+    "density": 794.8717948717948,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Bind.ahk",
+    "loc": 52,
+    "total": 43,
+    "errors": 3,
+    "warnings": 40,
+    "density": 826.9230769230769,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_BinMod.ahk",
+    "loc": 261,
+    "total": 141,
+    "errors": 37,
+    "warnings": 104,
+    "density": 540.2298850574713,
+    "top_rules": [
+      "P001",
+      "W004",
+      "W008"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Bitwarden.ahk",
+    "loc": 127,
+    "total": 95,
+    "errors": 3,
+    "warnings": 92,
+    "density": 748.0314960629921,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_build.ahk",
+    "loc": 83,
+    "total": 44,
+    "errors": 9,
+    "warnings": 35,
+    "density": 530.1204819277109,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_bw-at.ahk",
+    "loc": 202,
+    "total": 58,
+    "errors": 10,
+    "warnings": 48,
+    "density": 287.1287128712871,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_CheckExe.ahk",
+    "loc": 17,
+    "total": 16,
+    "errors": 2,
+    "warnings": 14,
+    "density": 941.1764705882352,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_CheckVersion.ahk",
+    "loc": 15,
+    "total": 14,
+    "errors": 2,
+    "warnings": 12,
+    "density": 933.3333333333334,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Crypt.ahk",
+    "loc": 816,
+    "total": 680,
+    "errors": 55,
+    "warnings": 625,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Curl.ahk",
+    "loc": 37,
+    "total": 25,
+    "errors": 2,
+    "warnings": 23,
+    "density": 675.6756756756756,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Epoch.ahk",
+    "loc": 16,
+    "total": 10,
+    "errors": 2,
+    "warnings": 8,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Error.ahk",
+    "loc": 44,
+    "total": 45,
+    "errors": 2,
+    "warnings": 43,
+    "density": 1022.7272727272727,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_ExitApp.ahk",
+    "loc": 9,
+    "total": 9,
+    "errors": 2,
+    "warnings": 7,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Favicons.ahk",
+    "loc": 198,
+    "total": 143,
+    "errors": 11,
+    "warnings": 132,
+    "density": 722.2222222222222,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Generator.ahk",
+    "loc": 131,
+    "total": 106,
+    "errors": 2,
+    "warnings": 104,
+    "density": 809.1603053435115,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Ini.ahk",
+    "loc": 151,
+    "total": 119,
+    "errors": 2,
+    "warnings": 117,
+    "density": 788.0794701986755,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_KeysWait.ahk",
+    "loc": 24,
+    "total": 19,
+    "errors": 2,
+    "warnings": 17,
+    "density": 791.6666666666666,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_LatestFirefox.ahk",
+    "loc": 10,
+    "total": 11,
+    "errors": 4,
+    "warnings": 7,
+    "density": 1100.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Lock.ahk",
+    "loc": 37,
+    "total": 32,
+    "errors": 2,
+    "warnings": 30,
+    "density": 864.8648648648649,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Login.ahk",
+    "loc": 218,
+    "total": 181,
+    "errors": 8,
+    "warnings": 173,
+    "density": 830.2752293577981,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Match.ahk",
+    "loc": 199,
+    "total": 144,
+    "errors": 10,
+    "warnings": 134,
+    "density": 723.6180904522613,
+    "top_rules": [
+      "P001",
+      "W007",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Menu.ahk",
+    "loc": 41,
+    "total": 30,
+    "errors": 2,
+    "warnings": 28,
+    "density": 731.7073170731708,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Object.ahk",
+    "loc": 225,
+    "total": 187,
+    "errors": 8,
+    "warnings": 179,
+    "density": 831.1111111111111,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_OpenVault.ahk",
+    "loc": 8,
+    "total": 7,
+    "errors": 2,
+    "warnings": 5,
+    "density": 875.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Pin.ahk",
+    "loc": 81,
+    "total": 74,
+    "errors": 4,
+    "warnings": 70,
+    "density": 913.5802469135801,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Settings.ahk",
+    "loc": 224,
+    "total": 186,
+    "errors": 9,
+    "warnings": 177,
+    "density": 830.3571428571429,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_setup.ahk",
+    "loc": 305,
+    "total": 109,
+    "errors": 16,
+    "warnings": 93,
+    "density": 357.37704918032784,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Tcato.ahk",
+    "loc": 38,
+    "total": 30,
+    "errors": 2,
+    "warnings": 28,
+    "density": 789.4736842105264,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Timeout.ahk",
+    "loc": 29,
+    "total": 27,
+    "errors": 2,
+    "warnings": 25,
+    "density": 931.0344827586207,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Tip.ahk",
+    "loc": 15,
+    "total": 10,
+    "errors": 2,
+    "warnings": 8,
+    "density": 666.6666666666666,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Totp.ahk",
+    "loc": 109,
+    "total": 84,
+    "errors": 2,
+    "warnings": 82,
+    "density": 770.6422018348625,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_UIAccess.ahk",
+    "loc": 30,
+    "total": 33,
+    "errors": 4,
+    "warnings": 29,
+    "density": 1100.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_uninstall.ahk",
+    "loc": 131,
+    "total": 48,
+    "errors": 10,
+    "warnings": 38,
+    "density": 366.412213740458,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Update.ahk",
+    "loc": 35,
+    "total": 36,
+    "errors": 5,
+    "warnings": 31,
+    "density": 1028.5714285714284,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Url.ahk",
+    "loc": 96,
+    "total": 68,
+    "errors": 3,
+    "warnings": 65,
+    "density": 708.3333333333334,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_ValidateUser.ahk",
+    "loc": 73,
+    "total": 60,
+    "errors": 2,
+    "warnings": 58,
+    "density": 821.917808219178,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "anonymous1184_bitwarden-autotype_Zip.ahk",
+    "loc": 64,
+    "total": 56,
+    "errors": 7,
+    "warnings": 49,
+    "density": 875.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_Ahk2Exe.ahk",
+    "loc": 814,
+    "total": 583,
+    "errors": 176,
+    "warnings": 407,
+    "density": 716.2162162162163,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_Ahk2Exe64.ahk",
+    "loc": 15,
+    "total": 4,
+    "errors": 2,
+    "warnings": 2,
+    "density": 266.6666666666667,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_AHKType.ahk",
+    "loc": 60,
+    "total": 55,
+    "errors": 6,
+    "warnings": 49,
+    "density": 916.6666666666666,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_BinMod.ahk",
+    "loc": 318,
+    "total": 48,
+    "errors": 42,
+    "warnings": 6,
+    "density": 150.94339622641508,
+    "top_rules": [
+      "P001",
+      "W004",
+      "W008"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_Compiler.ahk",
+    "loc": 260,
+    "total": 259,
+    "errors": 28,
+    "warnings": 231,
+    "density": 996.1538461538462,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_Directives.ahk",
+    "loc": 367,
+    "total": 329,
+    "errors": 41,
+    "warnings": 288,
+    "density": 896.4577656675749,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_IconChanger.ahk",
+    "loc": 148,
+    "total": 165,
+    "errors": 9,
+    "warnings": 156,
+    "density": 1114.864864864865,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_ScriptParser.ahk",
+    "loc": 351,
+    "total": 386,
+    "errors": 71,
+    "warnings": 315,
+    "density": 1099.7150997150998,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "AutoHotkey_Ahk2Exe_Update.ahk",
+    "loc": 258,
+    "total": 288,
+    "errors": 137,
+    "warnings": 151,
+    "density": 1116.2790697674418,
+    "top_rules": [
+      "P001",
+      "W004",
+      "W008"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_AboutGui.ahk",
+    "loc": 36,
+    "total": 38,
+    "errors": 2,
+    "warnings": 36,
+    "density": 1055.5555555555557,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Classes.ahk",
+    "loc": 131,
+    "total": 99,
+    "errors": 2,
+    "warnings": 97,
+    "density": 755.7251908396947,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Const_WinUser.ahk",
+    "loc": 558,
+    "total": 314,
+    "errors": 2,
+    "warnings": 312,
+    "density": 562.7240143369175,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Debug.ahk",
+    "loc": 109,
+    "total": 130,
+    "errors": 14,
+    "warnings": 116,
+    "density": 1192.6605504587155,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W006"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Functions.ahk",
+    "loc": 145,
+    "total": 112,
+    "errors": 6,
+    "warnings": 106,
+    "density": 772.4137931034483,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_HelpGui.ahk",
+    "loc": 84,
+    "total": 144,
+    "errors": 36,
+    "warnings": 108,
+    "density": 1714.2857142857142,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Settings.ahk",
+    "loc": 236,
+    "total": 267,
+    "errors": 15,
+    "warnings": 252,
+    "density": 1131.35593220339,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_SettingsGui.ahk",
+    "loc": 132,
+    "total": 163,
+    "errors": 20,
+    "warnings": 143,
+    "density": 1234.8484848484848,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Snapper.ahk",
+    "loc": 544,
+    "total": 523,
+    "errors": 30,
+    "warnings": 493,
+    "density": 961.3970588235294,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_SnapX.ahk",
+    "loc": 111,
+    "total": 15,
+    "errors": 4,
+    "warnings": 11,
+    "density": 135.13513513513513,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_Tray.ahk",
+    "loc": 148,
+    "total": 172,
+    "errors": 41,
+    "warnings": 131,
+    "density": 1162.162162162162,
+    "top_rules": [
+      "P001",
+      "W009",
+      "S005"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_UpdateChecker.ahk",
+    "loc": 73,
+    "total": 67,
+    "errors": 5,
+    "warnings": 62,
+    "density": 917.8082191780821,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "benallred_SnapX_WinGetPosEx.ahk",
+    "loc": 171,
+    "total": 14,
+    "errors": 9,
+    "warnings": 5,
+    "density": 81.87134502923976,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_adosql.ahk",
+    "loc": 146,
+    "total": 112,
+    "errors": 4,
+    "warnings": 108,
+    "density": 767.1232876712328,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_AHKPanic.ahk",
+    "loc": 28,
+    "total": 20,
+    "errors": 16,
+    "warnings": 4,
+    "density": 714.2857142857143,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_AppSpecific.ahk",
+    "loc": 16,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 187.5,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Array.ahk",
+    "loc": 105,
+    "total": 89,
+    "errors": 16,
+    "warnings": 73,
+    "density": 847.6190476190476,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_AutoCorrect.ahk",
+    "loc": 5700,
+    "total": 29,
+    "errors": 20,
+    "warnings": 9,
+    "density": 5.087719298245614,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_calc.ahk",
+    "loc": 85,
+    "total": 85,
+    "errors": 76,
+    "warnings": 9,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_CapsNav.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 5,
+    "warnings": 10,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_ClipboardHelpers.ahk",
+    "loc": 46,
+    "total": 14,
+    "errors": 3,
+    "warnings": 11,
+    "density": 304.34782608695656,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_CmdPrompt.ahk",
+    "loc": 6,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_DBGView.ahk",
+    "loc": 31,
+    "total": 36,
+    "errors": 8,
+    "warnings": 28,
+    "density": 1161.2903225806454,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_DirectoryCompare.ahk",
+    "loc": 168,
+    "total": 99,
+    "errors": 93,
+    "warnings": 6,
+    "density": 589.2857142857143,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_DynamicFunctionTester.ahk",
+    "loc": 185,
+    "total": 92,
+    "errors": 87,
+    "warnings": 5,
+    "density": 497.29729729729735,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_DynaRun.ahk",
+    "loc": 23,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 260.8695652173913,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Everything.ahk",
+    "loc": 41,
+    "total": 45,
+    "errors": 15,
+    "warnings": 30,
+    "density": 1097.5609756097563,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Explorer.ahk",
+    "loc": 98,
+    "total": 102,
+    "errors": 11,
+    "warnings": 91,
+    "density": 1040.8163265306123,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Fade.ahk",
+    "loc": 35,
+    "total": 29,
+    "errors": 8,
+    "warnings": 21,
+    "density": 828.5714285714287,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Functions.ahk",
+    "loc": 258,
+    "total": 67,
+    "errors": 62,
+    "warnings": 5,
+    "density": 259.68992248062017,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Home.ahk",
+    "loc": 171,
+    "total": 98,
+    "errors": 32,
+    "warnings": 66,
+    "density": 573.0994152046783,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Hotstrings.ahk",
+    "loc": 117,
+    "total": 82,
+    "errors": 16,
+    "warnings": 66,
+    "density": 700.8547008547008,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Ini.ahk",
+    "loc": 1640,
+    "total": 357,
+    "errors": 146,
+    "warnings": 211,
+    "density": 217.6829268292683,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_json.ahk",
+    "loc": 80,
+    "total": 18,
+    "errors": 13,
+    "warnings": 5,
+    "density": 225.0,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_LedControl.ahk",
+    "loc": 134,
+    "total": 13,
+    "errors": 6,
+    "warnings": 7,
+    "density": 97.01492537313433,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S011"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_LibCon.ahk",
+    "loc": 1155,
+    "total": 1293,
+    "errors": 75,
+    "warnings": 1218,
+    "density": 1119.4805194805194,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_LightningRenamer.ahk",
+    "loc": 2365,
+    "total": 1056,
+    "errors": 945,
+    "warnings": 111,
+    "density": 446.51162790697674,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Media.ahk",
+    "loc": 42,
+    "total": 32,
+    "errors": 7,
+    "warnings": 25,
+    "density": 761.9047619047618,
+    "top_rules": [
+      "P001",
+      "W007",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Monitor.ahk",
+    "loc": 75,
+    "total": 62,
+    "errors": 7,
+    "warnings": 55,
+    "density": 826.6666666666666,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_MoveTaskbar.ahk",
+    "loc": 131,
+    "total": 31,
+    "errors": 24,
+    "warnings": 7,
+    "density": 236.6412213740458,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_MsgBoxGenerator.ahk",
+    "loc": 468,
+    "total": 213,
+    "errors": 181,
+    "warnings": 32,
+    "density": 455.12820512820514,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_MyMenu.ahk",
+    "loc": 83,
+    "total": 56,
+    "errors": 22,
+    "warnings": 34,
+    "density": 674.6987951807229,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Notepad++.ahk",
+    "loc": 18,
+    "total": 21,
+    "errors": 4,
+    "warnings": 17,
+    "density": 1166.6666666666667,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Notify-old.ahk",
+    "loc": 362,
+    "total": 384,
+    "errors": 115,
+    "warnings": 269,
+    "density": 1060.7734806629833,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Notify.ahk",
+    "loc": 430,
+    "total": 157,
+    "errors": 132,
+    "warnings": 25,
+    "density": 365.1162790697675,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Process.ahk",
+    "loc": 31,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 193.54838709677418,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Replace.ahk",
+    "loc": 253,
+    "total": 195,
+    "errors": 41,
+    "warnings": 154,
+    "density": 770.7509881422925,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_ShellFileOperation.ahk",
+    "loc": 120,
+    "total": 144,
+    "errors": 10,
+    "warnings": 134,
+    "density": 1200.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Shortcuts.ahk",
+    "loc": 230,
+    "total": 145,
+    "errors": 40,
+    "warnings": 105,
+    "density": 630.4347826086956,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Show.ahk",
+    "loc": 43,
+    "total": 42,
+    "errors": 15,
+    "warnings": 27,
+    "density": 976.7441860465116,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_SublimeText.ahk",
+    "loc": 40,
+    "total": 41,
+    "errors": 10,
+    "warnings": 31,
+    "density": 1025.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_TaskBar_SetAttr.ahk",
+    "loc": 155,
+    "total": 14,
+    "errors": 8,
+    "warnings": 6,
+    "density": 90.32258064516128,
+    "top_rules": [
+      "P001",
+      "W010",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_TF.ahk",
+    "loc": 1360,
+    "total": 1375,
+    "errors": 201,
+    "warnings": 1174,
+    "density": 1011.0294117647059,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_VA.ahk",
+    "loc": 841,
+    "total": 96,
+    "errors": 30,
+    "warnings": 66,
+    "density": 114.1498216409037,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Varize.ahk",
+    "loc": 17,
+    "total": 20,
+    "errors": 6,
+    "warnings": 14,
+    "density": 1176.4705882352941,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_ViewScriptProcesses.ahk",
+    "loc": 164,
+    "total": 64,
+    "errors": 47,
+    "warnings": 17,
+    "density": 390.2439024390244,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_VisualStudio.ahk",
+    "loc": 70,
+    "total": 70,
+    "errors": 16,
+    "warnings": 54,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W010",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_WinControl.ahk",
+    "loc": 107,
+    "total": 48,
+    "errors": 45,
+    "warnings": 3,
+    "density": 448.5981308411215,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_WindowsExplorer.ahk",
+    "loc": 81,
+    "total": 80,
+    "errors": 16,
+    "warnings": 64,
+    "density": 987.6543209876543,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_Work.ahk",
+    "loc": 85,
+    "total": 35,
+    "errors": 14,
+    "warnings": 21,
+    "density": 411.7647058823529,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_WPXA.ahk",
+    "loc": 1527,
+    "total": 392,
+    "errors": 273,
+    "warnings": 119,
+    "density": 256.71250818598554,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "denolfe_AutoHotkey_xml.ahk",
+    "loc": 627,
+    "total": 608,
+    "errors": 14,
+    "warnings": 594,
+    "density": 969.6969696969697,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "ergoemacs_ergoemacs-mode_ahk-us.ahk",
+    "loc": 991,
+    "total": 249,
+    "errors": 143,
+    "warnings": 106,
+    "density": 251.2613521695257,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AHK.ahk",
+    "loc": 236,
+    "total": 207,
+    "errors": 2,
+    "warnings": 205,
+    "density": 877.1186440677966,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxesToMouse.ahk",
+    "loc": 87,
+    "total": 105,
+    "errors": 14,
+    "warnings": 91,
+    "density": 1206.896551724138,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisInitializer.ahk",
+    "loc": 37,
+    "total": 35,
+    "errors": 4,
+    "warnings": 31,
+    "density": 945.9459459459459,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisMerger.ahk",
+    "loc": 88,
+    "total": 97,
+    "errors": 15,
+    "warnings": 82,
+    "density": 1102.2727272727273,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisPreview.ahk",
+    "loc": 11,
+    "total": 14,
+    "errors": 3,
+    "warnings": 11,
+    "density": 1272.7272727272727,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisRangeToButtons.ahk",
+    "loc": 103,
+    "total": 115,
+    "errors": 8,
+    "warnings": 107,
+    "density": 1116.504854368932,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisSplitter.ahk",
+    "loc": 63,
+    "total": 75,
+    "errors": 8,
+    "warnings": 67,
+    "density": 1190.4761904761904,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisToAxis.ahk",
+    "loc": 67,
+    "total": 69,
+    "errors": 12,
+    "warnings": 57,
+    "density": 1029.8507462686568,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_AxisToButtons.ahk",
+    "loc": 66,
+    "total": 73,
+    "errors": 11,
+    "warnings": 62,
+    "density": 1106.060606060606,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_BannerMenu.ahk",
+    "loc": 59,
+    "total": 57,
+    "errors": 4,
+    "warnings": 53,
+    "density": 966.1016949152543,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_BindModeHandler.ahk",
+    "loc": 131,
+    "total": 127,
+    "errors": 8,
+    "warnings": 119,
+    "density": 969.4656488549617,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_BindModeThread.ahk",
+    "loc": 253,
+    "total": 213,
+    "errors": 4,
+    "warnings": 209,
+    "density": 841.897233201581,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonInitializer.ahk",
+    "loc": 31,
+    "total": 33,
+    "errors": 4,
+    "warnings": 29,
+    "density": 1064.516129032258,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonPreview.ahk",
+    "loc": 16,
+    "total": 20,
+    "errors": 3,
+    "warnings": 17,
+    "density": 1250.0,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonPreviewThin.ahk",
+    "loc": 17,
+    "total": 20,
+    "errors": 3,
+    "warnings": 17,
+    "density": 1176.4705882352941,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonsToAxis.ahk",
+    "loc": 93,
+    "total": 107,
+    "errors": 13,
+    "warnings": 94,
+    "density": 1150.5376344086023,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonsToMouse.ahk",
+    "loc": 99,
+    "total": 119,
+    "errors": 9,
+    "warnings": 110,
+    "density": 1202.020202020202,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonToButton.ahk",
+    "loc": 42,
+    "total": 32,
+    "errors": 6,
+    "warnings": 26,
+    "density": 761.9047619047618,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ButtonToButtonPr.ahk",
+    "loc": 34,
+    "total": 38,
+    "errors": 7,
+    "warnings": 31,
+    "density": 1117.6470588235295,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_CLI.ahk",
+    "loc": 24,
+    "total": 16,
+    "errors": 7,
+    "warnings": 9,
+    "density": 666.6666666666666,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_CodeRunner.ahk",
+    "loc": 50,
+    "total": 57,
+    "errors": 7,
+    "warnings": 50,
+    "density": 1140.0,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_GameBind.ahk",
+    "loc": 37,
+    "total": 50,
+    "errors": 6,
+    "warnings": 44,
+    "density": 1351.3513513513512,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_GuiControl.ahk",
+    "loc": 99,
+    "total": 97,
+    "errors": 2,
+    "warnings": 95,
+    "density": 979.7979797979798,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_InputAxis.ahk",
+    "loc": 33,
+    "total": 37,
+    "errors": 2,
+    "warnings": 35,
+    "density": 1121.212121212121,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_InputButton.ahk",
+    "loc": 55,
+    "total": 54,
+    "errors": 2,
+    "warnings": 52,
+    "density": 981.8181818181818,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_InputHandler.ahk",
+    "loc": 76,
+    "total": 71,
+    "errors": 2,
+    "warnings": 69,
+    "density": 934.2105263157895,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_IOControl.ahk",
+    "loc": 181,
+    "total": 162,
+    "errors": 2,
+    "warnings": 160,
+    "density": 895.0276243093923,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_JSON.ahk",
+    "loc": 361,
+    "total": 292,
+    "errors": 8,
+    "warnings": 284,
+    "density": 808.8642659279778,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_Menu.ahk",
+    "loc": 222,
+    "total": 230,
+    "errors": 2,
+    "warnings": 228,
+    "density": 1036.0360360360362,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_MessageFilterThread.ahk",
+    "loc": 64,
+    "total": 47,
+    "errors": 5,
+    "warnings": 42,
+    "density": 734.375,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_Minimizer.ahk",
+    "loc": 47,
+    "total": 61,
+    "errors": 12,
+    "warnings": 49,
+    "density": 1297.872340425532,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_MouseToButtons.ahk",
+    "loc": 223,
+    "total": 234,
+    "errors": 14,
+    "warnings": 220,
+    "density": 1049.3273542600896,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_MouseToJoy.ahk",
+    "loc": 203,
+    "total": 218,
+    "errors": 15,
+    "warnings": 203,
+    "density": 1073.8916256157636,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_Notes.ahk",
+    "loc": 12,
+    "total": 10,
+    "errors": 3,
+    "warnings": 7,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_OneSwitchPulse.ahk",
+    "loc": 229,
+    "total": 226,
+    "errors": 3,
+    "warnings": 223,
+    "density": 986.8995633187773,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_OutputAxis.ahk",
+    "loc": 34,
+    "total": 39,
+    "errors": 2,
+    "warnings": 37,
+    "density": 1147.0588235294117,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_OutputButton.ahk",
+    "loc": 64,
+    "total": 61,
+    "errors": 2,
+    "warnings": 59,
+    "density": 953.125,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_PauseButton.ahk",
+    "loc": 27,
+    "total": 35,
+    "errors": 6,
+    "warnings": 29,
+    "density": 1296.2962962962963,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_Plugin.ahk",
+    "loc": 239,
+    "total": 242,
+    "errors": 10,
+    "warnings": 232,
+    "density": 1012.5523012552302,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_Profile.ahk",
+    "loc": 468,
+    "total": 448,
+    "errors": 16,
+    "warnings": 432,
+    "density": 957.2649572649573,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfileInputThread.ahk",
+    "loc": 965,
+    "total": 871,
+    "errors": 11,
+    "warnings": 860,
+    "density": 902.5906735751296,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfilePicker.ahk",
+    "loc": 30,
+    "total": 34,
+    "errors": 4,
+    "warnings": 30,
+    "density": 1133.3333333333333,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfileSelect.ahk",
+    "loc": 87,
+    "total": 89,
+    "errors": 2,
+    "warnings": 87,
+    "density": 1022.9885057471264,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfileSpeaker.ahk",
+    "loc": 23,
+    "total": 20,
+    "errors": 2,
+    "warnings": 18,
+    "density": 869.5652173913044,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfileSwitcher.ahk",
+    "loc": 48,
+    "total": 53,
+    "errors": 8,
+    "warnings": 45,
+    "density": 1104.1666666666667,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfileToolbox.ahk",
+    "loc": 308,
+    "total": 288,
+    "errors": 22,
+    "warnings": 266,
+    "density": 935.0649350649351,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_ProfileTreeBase.ahk",
+    "loc": 88,
+    "total": 87,
+    "errors": 6,
+    "warnings": 81,
+    "density": 988.6363636363636,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_StickOps.ahk",
+    "loc": 69,
+    "total": 68,
+    "errors": 2,
+    "warnings": 66,
+    "density": 985.5072463768116,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_Titan.ahk",
+    "loc": 410,
+    "total": 394,
+    "errors": 3,
+    "warnings": 391,
+    "density": 960.9756097560976,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_TTS.ahk",
+    "loc": 157,
+    "total": 153,
+    "errors": 6,
+    "warnings": 147,
+    "density": 974.5222929936306,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "evilC_UCR_UCR.ahk",
+    "loc": 75,
+    "total": 20,
+    "errors": 10,
+    "warnings": 10,
+    "density": 266.6666666666667,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "evilC_UCR_UCRMain.ahk",
+    "loc": 1206,
+    "total": 1108,
+    "errors": 19,
+    "warnings": 1089,
+    "density": 918.7396351575456,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "evilC_UCR_vGen.ahk",
+    "loc": 605,
+    "total": 591,
+    "errors": 5,
+    "warnings": 586,
+    "density": 976.8595041322315,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "evilC_UCR_XInput.ahk",
+    "loc": 96,
+    "total": 93,
+    "errors": 2,
+    "warnings": 91,
+    "density": 968.75,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "fincs_GenDocs_GenDocs.ahk",
+    "loc": 110,
+    "total": 70,
+    "errors": 31,
+    "warnings": 39,
+    "density": 636.3636363636364,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "fincs_GenDocs_GenerateDocs.ahk",
+    "loc": 401,
+    "total": 435,
+    "errors": 76,
+    "warnings": 359,
+    "density": 1084.7880299251872,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "fincs_GenDocs_Markdown2HTML.ahk",
+    "loc": 241,
+    "total": 248,
+    "errors": 40,
+    "warnings": 208,
+    "density": 1029.045643153527,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "fincs_GenDocs_PrepExample.ahk",
+    "loc": 30,
+    "total": 36,
+    "errors": 16,
+    "warnings": 20,
+    "density": 1200.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "fincs_GenDocs_RetrieveDocs.ahk",
+    "loc": 147,
+    "total": 148,
+    "errors": 17,
+    "warnings": 131,
+    "density": 1006.8027210884354,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "fincs_GenDocs_TestLib.ahk",
+    "loc": 174,
+    "total": 159,
+    "errors": 2,
+    "warnings": 157,
+    "density": 913.7931034482759,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Commands.ahk",
+    "loc": 8,
+    "total": 23,
+    "errors": 14,
+    "warnings": 9,
+    "density": 2875.0,
+    "top_rules": [
+      "P001",
+      "W007",
+      "S005"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Console.ahk",
+    "loc": 263,
+    "total": 304,
+    "errors": 13,
+    "warnings": 291,
+    "density": 1155.893536121673,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Cookie.ahk",
+    "loc": 204,
+    "total": 195,
+    "errors": 12,
+    "warnings": 183,
+    "density": 955.8823529411765,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W010"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Embed.ahk",
+    "loc": 41,
+    "total": 27,
+    "errors": 16,
+    "warnings": 11,
+    "density": 658.5365853658537,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_IRC.ahk",
+    "loc": 158,
+    "total": 126,
+    "errors": 9,
+    "warnings": 117,
+    "density": 797.4683544303798,
+    "top_rules": [
+      "P001",
+      "W010",
+      "S005"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Snake.ahk",
+    "loc": 80,
+    "total": 91,
+    "errors": 8,
+    "warnings": 83,
+    "density": 1137.5,
+    "top_rules": [
+      "P001",
+      "W001",
+      "S005"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Syntax.ahk",
+    "loc": 65,
+    "total": 45,
+    "errors": 10,
+    "warnings": 35,
+    "density": 692.3076923076923,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "G33kDude_Console_Tetris.ahk",
+    "loc": 372,
+    "total": 271,
+    "errors": 10,
+    "warnings": 261,
+    "density": 728.494623655914,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W008"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Acc.ahk",
+    "loc": 197,
+    "total": 161,
+    "errors": 26,
+    "warnings": 135,
+    "density": 817.258883248731,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_DoubleCommander.ahk",
+    "loc": 478,
+    "total": 120,
+    "errors": 89,
+    "warnings": 31,
+    "density": 251.0460251046025,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_EasyIni.ahk",
+    "loc": 607,
+    "total": 540,
+    "errors": 64,
+    "warnings": 476,
+    "density": 889.6210873146623,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Example.ahk",
+    "loc": 138,
+    "total": 18,
+    "errors": 5,
+    "warnings": 13,
+    "density": 130.43478260869566,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Explorer.ahk",
+    "loc": 319,
+    "total": 64,
+    "errors": 32,
+    "warnings": 32,
+    "density": 200.6269592476489,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Foobar2000.ahk",
+    "loc": 77,
+    "total": 12,
+    "errors": 6,
+    "warnings": 6,
+    "density": 155.84415584415584,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_GDIP.ahk",
+    "loc": 2713,
+    "total": 1225,
+    "errors": 81,
+    "warnings": 1144,
+    "density": 451.529671949871,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_General.ahk",
+    "loc": 1262,
+    "total": 252,
+    "errors": 159,
+    "warnings": 93,
+    "density": 199.68304278922344,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Logger.ahk",
+    "loc": 15,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 333.3333333333333,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Main.ahk",
+    "loc": 239,
+    "total": 40,
+    "errors": 38,
+    "warnings": 2,
+    "density": 167.36401673640165,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_MicrosoftExcel.ahk",
+    "loc": 2341,
+    "total": 175,
+    "errors": 164,
+    "warnings": 11,
+    "density": 74.754378470739,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Plugins.ahk",
+    "loc": 23,
+    "total": 13,
+    "errors": 12,
+    "warnings": 1,
+    "density": 565.2173913043478,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_PluginTemplete.ahk",
+    "loc": 61,
+    "total": 11,
+    "errors": 5,
+    "warnings": 6,
+    "density": 180.32786885245903,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S021"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_TCCommand.ahk",
+    "loc": 2678,
+    "total": 559,
+    "errors": 4,
+    "warnings": 555,
+    "density": 208.73786407766988,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_TCDialog.ahk",
+    "loc": 119,
+    "total": 31,
+    "errors": 24,
+    "warnings": 7,
+    "density": 260.5042016806723,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_TotalCommander.ahk",
+    "loc": 1644,
+    "total": 493,
+    "errors": 417,
+    "warnings": 76,
+    "density": 299.87834549878346,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_Vim.ahk",
+    "loc": 1217,
+    "total": 134,
+    "errors": 51,
+    "warnings": 83,
+    "density": 110.10682004930156,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_VimD.ahk",
+    "loc": 39,
+    "total": 20,
+    "errors": 19,
+    "warnings": 1,
+    "density": 512.8205128205128,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "goreliu_vimdesktop_VimDConfig.ahk",
+    "loc": 342,
+    "total": 52,
+    "errors": 40,
+    "warnings": 12,
+    "density": 152.046783625731,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ianzhao_textshot_textshot.ahk",
+    "loc": 9,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 555.5555555555555,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "joedf_Qonsole_LibCon-minXP.ahk",
+    "loc": 343,
+    "total": 372,
+    "errors": 36,
+    "warnings": 336,
+    "density": 1084.5481049562682,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "joedf_Qonsole_Qonsole.ahk",
+    "loc": 1501,
+    "total": 1836,
+    "errors": 610,
+    "warnings": 1226,
+    "density": 1223.184543637575,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "Lew29_The-Finals-Anti-Recoil_RunMe.ahk",
+    "loc": 228,
+    "total": 30,
+    "errors": 17,
+    "warnings": 13,
+    "density": 131.57894736842104,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard__registry.ahk",
+    "loc": 7,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 571.4285714285714,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_aboutGUI.ahk",
+    "loc": 143,
+    "total": 159,
+    "errors": 37,
+    "warnings": 122,
+    "density": 1111.8881118881118,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_anticj_func_labels.ahk",
+    "loc": 829,
+    "total": 625,
+    "errors": 103,
+    "warnings": 522,
+    "density": 753.9203860072377,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W003"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_API.ahk",
+    "loc": 461,
+    "total": 399,
+    "errors": 28,
+    "warnings": 371,
+    "density": 865.5097613882863,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_channelOrganizer.ahk",
+    "loc": 706,
+    "total": 563,
+    "errors": 68,
+    "warnings": 495,
+    "density": 797.4504249291786,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_Class_SQLiteDB.ahk",
+    "loc": 907,
+    "total": 21,
+    "errors": 15,
+    "warnings": 6,
+    "density": 23.153252480705625,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_Clipjump.ahk",
+    "loc": 1664,
+    "total": 1391,
+    "errors": 212,
+    "warnings": 1179,
+    "density": 835.9375,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_Clipjump_x64.ahk",
+    "loc": 3,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 1666.6666666666667,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_create-new-file.ahk",
+    "loc": 50,
+    "total": 14,
+    "errors": 13,
+    "warnings": 1,
+    "density": 280.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_customizer.ahk",
+    "loc": 195,
+    "total": 167,
+    "errors": 23,
+    "warnings": 144,
+    "density": 856.4102564102564,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_deleteFileFolder.ahk",
+    "loc": 64,
+    "total": 61,
+    "errors": 8,
+    "warnings": 53,
+    "density": 953.125,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_external.historyPathClean.ahk",
+    "loc": 24,
+    "total": 18,
+    "errors": 8,
+    "warnings": 10,
+    "density": 750.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_external.ignoreWmanager.ahk",
+    "loc": 498,
+    "total": 103,
+    "errors": 53,
+    "warnings": 50,
+    "density": 206.82730923694777,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_external.inieditor.ahk",
+    "loc": 1070,
+    "total": 256,
+    "errors": 145,
+    "warnings": 111,
+    "density": 239.25233644859813,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_external.translationFileCleaner.ahk",
+    "loc": 52,
+    "total": 30,
+    "errors": 12,
+    "warnings": 18,
+    "density": 576.9230769230769,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_fileExplorer.ahk",
+    "loc": 11,
+    "total": 13,
+    "errors": 4,
+    "warnings": 9,
+    "density": 1181.818181818182,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_functionKeys.ahk",
+    "loc": 74,
+    "total": 21,
+    "errors": 17,
+    "warnings": 4,
+    "density": 283.78378378378375,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_Gdip_All.ahk",
+    "loc": 2698,
+    "total": 1224,
+    "errors": 81,
+    "warnings": 1143,
+    "density": 453.66938472942917,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_gdip_min.ahk",
+    "loc": 368,
+    "total": 342,
+    "errors": 25,
+    "warnings": 317,
+    "density": 929.3478260869565,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_History GUI Plug.ahk",
+    "loc": 775,
+    "total": 636,
+    "errors": 94,
+    "warnings": 542,
+    "density": 820.6451612903226,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_HotkeyParser.ahk",
+    "loc": 573,
+    "total": 212,
+    "errors": 37,
+    "warnings": 175,
+    "density": 369.98254799301924,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_hotPaste.ahk",
+    "loc": 51,
+    "total": 23,
+    "errors": 5,
+    "warnings": 18,
+    "density": 450.98039215686276,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S003"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_index.ahk",
+    "loc": 64,
+    "total": 12,
+    "errors": 11,
+    "warnings": 1,
+    "density": 187.5,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_init.ahk",
+    "loc": 20,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 300.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_key.ahk",
+    "loc": 142,
+    "total": 53,
+    "errors": 52,
+    "warnings": 1,
+    "density": 373.23943661971833,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_keyboard.ahk",
+    "loc": 88,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 68.18181818181817,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_mouse.ahk",
+    "loc": 742,
+    "total": 208,
+    "errors": 177,
+    "warnings": 31,
+    "density": 280.3234501347709,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_multi.ahk",
+    "loc": 215,
+    "total": 164,
+    "errors": 26,
+    "warnings": 138,
+    "density": 762.7906976744187,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_pformat.commonformats.ahk",
+    "loc": 201,
+    "total": 150,
+    "errors": 21,
+    "warnings": 129,
+    "density": 746.2686567164179,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_pformat.sentencecase.ahk",
+    "loc": 32,
+    "total": 24,
+    "errors": 5,
+    "warnings": 19,
+    "density": 750.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_pluginManager.ahk",
+    "loc": 253,
+    "total": 239,
+    "errors": 39,
+    "warnings": 200,
+    "density": 944.6640316205534,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_publicAPI.ahk",
+    "loc": 155,
+    "total": 74,
+    "errors": 16,
+    "warnings": 58,
+    "density": 477.4193548387097,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_remote-desktop.ahk",
+    "loc": 32,
+    "total": 12,
+    "errors": 10,
+    "warnings": 2,
+    "density": 375.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_runOrSwitch.ahk",
+    "loc": 65,
+    "total": 47,
+    "errors": 23,
+    "warnings": 24,
+    "density": 723.0769230769231,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_scanCode.ahk",
+    "loc": 14,
+    "total": 7,
+    "errors": 5,
+    "warnings": 2,
+    "density": 500.0,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_search-with-everything.ahk",
+    "loc": 35,
+    "total": 17,
+    "errors": 13,
+    "warnings": 4,
+    "density": 485.7142857142857,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_searchPasteMode.ahk",
+    "loc": 160,
+    "total": 143,
+    "errors": 5,
+    "warnings": 138,
+    "density": 893.75,
+    "top_rules": [
+      "P001",
+      "W003",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_Settings GUI Plug.ahk",
+    "loc": 532,
+    "total": 579,
+    "errors": 193,
+    "warnings": 386,
+    "density": 1088.345864661654,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_software.ahk",
+    "loc": 94,
+    "total": 34,
+    "errors": 29,
+    "warnings": 5,
+    "density": 361.7021276595745,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_system.ahk",
+    "loc": 44,
+    "total": 37,
+    "errors": 12,
+    "warnings": 25,
+    "density": 840.909090909091,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_test.ahk",
+    "loc": 92,
+    "total": 121,
+    "errors": 17,
+    "warnings": 104,
+    "density": 1315.217391304348,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_TooltipEx.ahk",
+    "loc": 203,
+    "total": 142,
+    "errors": 11,
+    "warnings": 131,
+    "density": 699.5073891625616,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_translations.ahk",
+    "loc": 68,
+    "total": 48,
+    "errors": 2,
+    "warnings": 46,
+    "density": 705.8823529411765,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_tray.ahk",
+    "loc": 16,
+    "total": 22,
+    "errors": 13,
+    "warnings": 9,
+    "density": 1375.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_TT_Console.ahk",
+    "loc": 58,
+    "total": 36,
+    "errors": 6,
+    "warnings": 30,
+    "density": 620.6896551724138,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_unhtml.ahk",
+    "loc": 79,
+    "total": 40,
+    "errors": 5,
+    "warnings": 35,
+    "density": 506.32911392405066,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "metaseed_metaKeyboard_WM_MOUSEMOVE.ahk",
+    "loc": 82,
+    "total": 60,
+    "errors": 8,
+    "warnings": 52,
+    "density": 731.7073170731708,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "ozansap_LyreBot_convert.ahk",
+    "loc": 13,
+    "total": 14,
+    "errors": 3,
+    "warnings": 11,
+    "density": 1076.923076923077,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ozansap_LyreBot_LyreBot.ahk",
+    "loc": 18,
+    "total": 10,
+    "errors": 7,
+    "warnings": 3,
+    "density": 555.5555555555555,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ozansap_LyreBot_LyreBot_Main.ahk",
+    "loc": 53,
+    "total": 26,
+    "errors": 7,
+    "warnings": 19,
+    "density": 490.5660377358491,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "ozansap_LyreBot_LyreBot_Settings.ahk",
+    "loc": 68,
+    "total": 36,
+    "errors": 13,
+    "warnings": 23,
+    "density": 529.4117647058823,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "plul_Public-AutoHotKey-Scripts_GUI.ahk",
+    "loc": 212,
+    "total": 45,
+    "errors": 40,
+    "warnings": 5,
+    "density": 212.26415094339623,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "plul_Public-AutoHotKey-Scripts_Host.ahk",
+    "loc": 29,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 137.9310344827586,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "plul_Public-AutoHotKey-Scripts_miscellaneous.ahk",
+    "loc": 24,
+    "total": 14,
+    "errors": 12,
+    "warnings": 2,
+    "density": 583.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "plul_Public-AutoHotKey-Scripts_UserCommands.ahk",
+    "loc": 244,
+    "total": 43,
+    "errors": 40,
+    "warnings": 3,
+    "density": 176.22950819672133,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_422 2ex.ahk",
+    "loc": 7024,
+    "total": 6781,
+    "errors": 1030,
+    "warnings": 5751,
+    "density": 965.4043280182233,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_AccViewer Source.ahk",
+    "loc": 840,
+    "total": 1052,
+    "errors": 263,
+    "warnings": 789,
+    "density": 1252.3809523809523,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_AhkSpy.ahk",
+    "loc": 7036,
+    "total": 6607,
+    "errors": 688,
+    "warnings": 5919,
+    "density": 939.0278567367823,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_AhkSpy_DC.ahk",
+    "loc": 3620,
+    "total": 3746,
+    "errors": 778,
+    "warnings": 2968,
+    "density": 1034.8066298342542,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_AhkSpyVersion 4.21 ie11.ahk",
+    "loc": 6932,
+    "total": 6689,
+    "errors": 1028,
+    "warnings": 5661,
+    "density": 964.9451817657242,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_AhkSpyZoom.ahk",
+    "loc": 458,
+    "total": 344,
+    "errors": 42,
+    "warnings": 302,
+    "density": 751.0917030567686,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_Crop 449.ahk",
+    "loc": 7692,
+    "total": 7345,
+    "errors": 767,
+    "warnings": 6578,
+    "density": 954.8881955278212,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "serzh82saratov_AhkSpy_iWB2 Learner.ahk",
+    "loc": 822,
+    "total": 290,
+    "errors": 184,
+    "warnings": 106,
+    "density": 352.7980535279805,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "Special-Niewbie_BTBatteryWatch_BTBatteryWatch.ahk",
+    "loc": 1291,
+    "total": 603,
+    "errors": 356,
+    "warnings": 247,
+    "density": 467.07978311386523,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "Special-Niewbie_BTBatteryWatch_conf.ahk",
+    "loc": 412,
+    "total": 129,
+    "errors": 103,
+    "warnings": 26,
+    "density": 313.1067961165049,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "Special-Niewbie_BTBatteryWatch_Device2.ahk",
+    "loc": 681,
+    "total": 264,
+    "errors": 123,
+    "warnings": 141,
+    "density": 387.6651982378855,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "Special-Niewbie_BTBatteryWatch_Device3.ahk",
+    "loc": 682,
+    "total": 265,
+    "errors": 123,
+    "warnings": 142,
+    "density": 388.56304985337243,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "Special-Niewbie_BTBatteryWatch_Device4.ahk",
+    "loc": 681,
+    "total": 265,
+    "errors": 123,
+    "warnings": 142,
+    "density": 389.1336270190896,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "Special-Niewbie_BTBatteryWatch_Gdip_All.ahk",
+    "loc": 9757,
+    "total": 465,
+    "errors": 116,
+    "warnings": 349,
+    "density": 47.658091626524545,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_BTT.ahk",
+    "loc": 825,
+    "total": 64,
+    "errors": 28,
+    "warnings": 36,
+    "density": 77.57575757575758,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_Gdip_All.ahk",
+    "loc": 8989,
+    "total": 442,
+    "errors": 115,
+    "warnings": 327,
+    "density": 49.171209255757034,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_Graphics.ahk",
+    "loc": 3884,
+    "total": 196,
+    "errors": 91,
+    "warnings": 105,
+    "density": 50.46343975283213,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_ImagePut.ahk",
+    "loc": 1877,
+    "total": 173,
+    "errors": 94,
+    "warnings": 79,
+    "density": 92.1683537559936,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_json.ahk",
+    "loc": 104,
+    "total": 12,
+    "errors": 9,
+    "warnings": 3,
+    "density": 115.38461538461539,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_log.ahk",
+    "loc": 797,
+    "total": 333,
+    "errors": 38,
+    "warnings": 295,
+    "density": 417.81681304893345,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_log4ahk.ahk",
+    "loc": 727,
+    "total": 328,
+    "errors": 35,
+    "warnings": 293,
+    "density": 451.1691884456671,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_menu_fuzz.ahk",
+    "loc": 848,
+    "total": 363,
+    "errors": 70,
+    "warnings": 293,
+    "density": 428.0660377358491,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_menu_fuzz\u901f\u5ea6\u7a0d\u6162.ahk",
+    "loc": 1149,
+    "total": 293,
+    "errors": 99,
+    "warnings": 194,
+    "density": 255.0043516100957,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_menue_create.ahk",
+    "loc": 945,
+    "total": 736,
+    "errors": 133,
+    "warnings": 603,
+    "density": 778.8359788359788,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_my_lib.ahk",
+    "loc": 684,
+    "total": 254,
+    "errors": 153,
+    "warnings": 101,
+    "density": 371.34502923976606,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_NonNull.ahk",
+    "loc": 176,
+    "total": 150,
+    "errors": 2,
+    "warnings": 148,
+    "density": 852.2727272727273,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_set.ahk",
+    "loc": 247,
+    "total": 74,
+    "errors": 67,
+    "warnings": 7,
+    "density": 299.59514170040484,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_ShinsOverlayClass.ahk",
+    "loc": 949,
+    "total": 867,
+    "errors": 16,
+    "warnings": 851,
+    "density": 913.5932560590094,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_super-command.ahk",
+    "loc": 1303,
+    "total": 316,
+    "errors": 129,
+    "warnings": 187,
+    "density": 242.51726784343822,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_TextRender.ahk",
+    "loc": 2791,
+    "total": 133,
+    "errors": 65,
+    "warnings": 68,
+    "density": 47.65317090648513,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "sxzxs_super-command_utility.ahk",
+    "loc": 729,
+    "total": 260,
+    "errors": 74,
+    "warnings": 186,
+    "density": 356.65294924554183,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_0.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_1.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_1paste.ahk",
+    "loc": 44,
+    "total": 16,
+    "errors": 15,
+    "warnings": 1,
+    "density": 363.6363636363636,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_2.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_2nd_keyboard_if_using_luamacros.ahk",
+    "loc": 245,
+    "total": 28,
+    "errors": 15,
+    "warnings": 13,
+    "density": 114.28571428571428,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_2nd_keyboard_if_using_Razer--BAD IDEA.ahk",
+    "loc": 110,
+    "total": 44,
+    "errors": 15,
+    "warnings": 29,
+    "density": 400.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_2paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_3.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_3paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_4.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_4paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_5.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_5paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_6.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_6paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_7.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_7paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_8.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_8paste.ahk",
+    "loc": 44,
+    "total": 15,
+    "errors": 14,
+    "warnings": 1,
+    "density": 340.9090909090909,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_9.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard__REDIRECTOR_RAZER.ahk",
+    "loc": 72,
+    "total": 29,
+    "errors": 20,
+    "warnings": 9,
+    "density": 402.77777777777777,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_A.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Accelerated_Scrolling_1.3.ahk",
+    "loc": 103,
+    "total": 50,
+    "errors": 7,
+    "warnings": 43,
+    "density": 485.4368932038835,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_After_Effects_Functions.ahk",
+    "loc": 101,
+    "total": 60,
+    "errors": 24,
+    "warnings": 36,
+    "density": 594.059405940594,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_ALL_MULTIPLE_KEYBOARD_ASSIGNMENTS.ahk",
+    "loc": 3748,
+    "total": 465,
+    "errors": 162,
+    "warnings": 303,
+    "density": 124.06616862326574,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Almost_All_Premiere_Functions.ahk",
+    "loc": 2413,
+    "total": 1026,
+    "errors": 378,
+    "warnings": 648,
+    "density": 425.1968503937008,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Almost_All_Windows_Functions.ahk",
+    "loc": 2640,
+    "total": 1324,
+    "errors": 364,
+    "warnings": 960,
+    "density": 501.51515151515144,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Alt_menu_acceleration_DISABLER.ahk",
+    "loc": 300,
+    "total": 17,
+    "errors": 7,
+    "warnings": 10,
+    "density": 56.666666666666664,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Alt_menu_acceleration_DISABLER_using_F13.ahk",
+    "loc": 114,
+    "total": 10,
+    "errors": 3,
+    "warnings": 7,
+    "density": 87.71929824561403,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_APPSKEY.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_autogate.ahk",
+    "loc": 12,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 416.6666666666667,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_B.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_baby's_first_extra_keyboard.ahk",
+    "loc": 35,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 171.42857142857142,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_backslash.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_BADswitchToFirefox.ahk",
+    "loc": 15,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 333.3333333333333,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_blur.ahk",
+    "loc": 16,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 312.5,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Both_Accelerated_Scrolling_1.3_AND_Cursor_click_visualizer-100UI.ahk",
+    "loc": 336,
+    "total": 144,
+    "errors": 42,
+    "warnings": 102,
+    "density": 428.57142857142856,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Both_Accelerated_Scrolling_1.3_AND_Cursor_click_visualizer.ahk",
+    "loc": 323,
+    "total": 137,
+    "errors": 42,
+    "warnings": 95,
+    "density": 424.1486068111455,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_C.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_capslock.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_CHROME TABS.ahk",
+    "loc": 11,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 272.7272727272727,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_clear Effects.ahk",
+    "loc": 13,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 384.61538461538464,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_comma.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_crop left.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_crop right.ahk",
+    "loc": 9,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 555.5555555555555,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_crop.ahk",
+    "loc": 10,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 400.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_D.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_DELETE.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_ding.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_DOWN.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_E.ahk",
+    "loc": 22,
+    "total": 10,
+    "errors": 3,
+    "warnings": 7,
+    "density": 454.5454545454545,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_EasyNIFTYWindowsDrag - TVH MODIFIED.ahk",
+    "loc": 1287,
+    "total": 1188,
+    "errors": 376,
+    "warnings": 812,
+    "density": 923.0769230769231,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W007"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_EasyWindowDrag-Script.ahk",
+    "loc": 51,
+    "total": 23,
+    "errors": 19,
+    "warnings": 4,
+    "density": 450.98039215686276,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_EasyWindowDrag_(KDE) -- uh oh what did i do.ahk",
+    "loc": 544,
+    "total": 135,
+    "errors": 79,
+    "warnings": 56,
+    "density": 248.16176470588235,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_EasyWindowDrag_(KDE) being modified.ahk",
+    "loc": 461,
+    "total": 126,
+    "errors": 77,
+    "warnings": 49,
+    "density": 273.31887201735356,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_EasyWindowDrag_(KDE).ahk",
+    "loc": 574,
+    "total": 149,
+    "errors": 84,
+    "warnings": 65,
+    "density": 259.581881533101,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_END.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_ENTER.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_EQUALS.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_ESC.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_explorerIcons.ahk",
+    "loc": 23,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 260.8695652173913,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_explorerList.ahk",
+    "loc": 22,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 272.7272727272727,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_explorersort.ahk",
+    "loc": 305,
+    "total": 200,
+    "errors": 12,
+    "warnings": 188,
+    "density": 655.7377049180327,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F1.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F10.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F11.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F12.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F12_F11_scroller.ahk",
+    "loc": 50,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 100.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S021"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F1F2F3F4_program_launcher.ahk",
+    "loc": 115,
+    "total": 37,
+    "errors": 11,
+    "warnings": 26,
+    "density": 321.73913043478257,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F2.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F3.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F4.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F5.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F6.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F7.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F8.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_F9.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover.ahk",
+    "loc": 319,
+    "total": 116,
+    "errors": 85,
+    "warnings": 31,
+    "density": 363.6363636363636,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover_CSF.ahk",
+    "loc": 20,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover_FAP.ahk",
+    "loc": 17,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 294.11764705882354,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover_LTT.ahk",
+    "loc": 14,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 357.14285714285717,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover_SC.ahk",
+    "loc": 17,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 294.11764705882354,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover_test.ahk",
+    "loc": 14,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 357.14285714285717,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_filemover_TL.ahk",
+    "loc": 17,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 294.11764705882354,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_forwardslash.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_FULL_extra_keyboard.ahk",
+    "loc": 329,
+    "total": 25,
+    "errors": 21,
+    "warnings": 4,
+    "density": 75.98784194528875,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_G.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_gui.ahk",
+    "loc": 218,
+    "total": 141,
+    "errors": 80,
+    "warnings": 61,
+    "density": 646.7889908256881,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_H.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_HOME.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_I.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_iCue_F24_macro_keyboard.ahk",
+    "loc": 411,
+    "total": 34,
+    "errors": 29,
+    "warnings": 5,
+    "density": 82.7250608272506,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_INSERT.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant ALL FOOTAGE.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant Delivery.ahk",
+    "loc": 7,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 714.2857142857143,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant Extra videos.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant Graphics.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant L-roll.ahk",
+    "loc": 10,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant Music.ahk",
+    "loc": 10,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant project.ahk",
+    "loc": 8,
+    "total": 7,
+    "errors": 3,
+    "warnings": 4,
+    "density": 875.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant ROOT.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant SAVE LOCATION.ahk",
+    "loc": 9,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 555.5555555555555,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant Scripts.ahk",
+    "loc": 7,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 714.2857142857143,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_instant Thumbnail.ahk",
+    "loc": 7,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 714.2857142857143,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_J.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_K.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_KeyPress.ahk",
+    "loc": 198,
+    "total": 142,
+    "errors": 25,
+    "warnings": 117,
+    "density": 717.1717171717171,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_KEYSTROKE_VIZ.ahk",
+    "loc": 610,
+    "total": 386,
+    "errors": 252,
+    "warnings": 134,
+    "density": 632.7868852459017,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_L.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_LAlt.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch delivery folder.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch MUSIC.ahk",
+    "loc": 10,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_Clips_archive_2.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_ClipsWAN_pending.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_CSF_archive.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_CSF_archive_2.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_CSF_delivery.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_CSF_pending.ahk",
+    "loc": 7,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 714.2857142857143,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_FAP_archive.ahk",
+    "loc": 6,
+    "total": 7,
+    "errors": 3,
+    "warnings": 4,
+    "density": 1166.6666666666667,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_FAP_archive_2.ahk",
+    "loc": 6,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_FAP_delivery.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_FAP_pending.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_github_scripts_folder.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_KEYCAPS.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_LTT_archive.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_LTT_archive_2.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_LTT_delivery.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_LTT_pending.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_LTT_template.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_OBS_videos.ahk",
+    "loc": 6,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_SC_delivery.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_shadowplay_folder.ahk",
+    "loc": 18,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 277.77777777777777,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_ShortC_archive.ahk",
+    "loc": 6,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_ShortC_archive_2.ahk",
+    "loc": 6,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 1000.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_ShortC_pending.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_TL_archive.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_TL_archive_2.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_TL_delivery.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_launch_TL_pending.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Lctrl.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_LEFT.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_leftbracket.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_lock v1a1.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_LShift.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_LWin.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_M.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_message_TIMERisUP.ahk",
+    "loc": 7,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 714.2857142857143,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_minus.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Modifier_key_revealer.ahk",
+    "loc": 356,
+    "total": 182,
+    "errors": 159,
+    "warnings": 23,
+    "density": 511.2359550561798,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W007"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_monomaker left.ahk",
+    "loc": 7,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 571.4285714285714,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_monomaker right.ahk",
+    "loc": 7,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 571.4285714285714,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_multiClipboard.ahk",
+    "loc": 106,
+    "total": 29,
+    "errors": 16,
+    "warnings": 13,
+    "density": 273.58490566037733,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_N.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numlock.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad0.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad1.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad2.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad3.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad4.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad5.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad6.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad7.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad8.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpad9.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadAdd.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadDiv.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadDot.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadEnter.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadMinus.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadMult.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_numpadSub.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_O.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_open Window Spy.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_open_URL.ahk",
+    "loc": 50,
+    "total": 19,
+    "errors": 17,
+    "warnings": 2,
+    "density": 380.0,
+    "top_rules": [
+      "P001",
+      "W005",
+      "W008"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_openlatestfile docx.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_openlatestfile prproj.ahk",
+    "loc": 6,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 833.3333333333334,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_P.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_pagedown.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_pageup.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_pauseBreak.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_period.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_perma_numlock_launcher.ahk",
+    "loc": 56,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 107.14285714285714,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_permanent_numlock.ahk",
+    "loc": 50,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 120.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Photoshop_Functions.ahk",
+    "loc": 121,
+    "total": 80,
+    "errors": 12,
+    "warnings": 68,
+    "density": 661.1570247933885,
+    "top_rules": [
+      "P001",
+      "W009",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_pin to clip.ahk",
+    "loc": 15,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 400.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_plus.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_plus7db.ahk",
+    "loc": 13,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 461.53846153846155,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_point_to_gui.ahk",
+    "loc": 33,
+    "total": 16,
+    "errors": 11,
+    "warnings": 5,
+    "density": 484.8484848484849,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_pop.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_PREMIERE_BUG_FIX_for_stubborn_hot_text.ahk",
+    "loc": 107,
+    "total": 11,
+    "errors": 5,
+    "warnings": 6,
+    "density": 102.80373831775701,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_PREMIERE_MOD_Right_click_timeline_to_move_playhead.ahk",
+    "loc": 173,
+    "total": 39,
+    "errors": 11,
+    "warnings": 28,
+    "density": 225.4335260115607,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_printscreen.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_psexport.ahk",
+    "loc": 93,
+    "total": 75,
+    "errors": 9,
+    "warnings": 66,
+    "density": 806.4516129032257,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Q.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_QMK_F24_macro_keyboard.ahk",
+    "loc": 380,
+    "total": 27,
+    "errors": 21,
+    "warnings": 6,
+    "density": 71.05263157894737,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_R.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Ralt.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Razer_macro_keyboard.ahk",
+    "loc": 247,
+    "total": 129,
+    "errors": 15,
+    "warnings": 114,
+    "density": 522.2672064777329,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W009"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_rctrl up.ahk",
+    "loc": 8,
+    "total": 2,
+    "errors": 1,
+    "warnings": 1,
+    "density": 250.0,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_RCtrl.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_re-select.ahk",
+    "loc": 13,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 461.53846153846155,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_RIGHT.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_rightbracket.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_RShift.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_RWin.ahk",
+    "loc": 3,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 1333.3333333333333,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_S.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_scrollLock.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_semicolon.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_singlequote.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_sortExplorerByDate.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_sortExplorerByName.ahk",
+    "loc": 8,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 625.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_space.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_switchToExplorer.ahk",
+    "loc": 16,
+    "total": 5,
+    "errors": 2,
+    "warnings": 3,
+    "density": 312.5,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_switchToFirefox.ahk",
+    "loc": 29,
+    "total": 12,
+    "errors": 2,
+    "warnings": 10,
+    "density": 413.7931034482759,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_switchToNotepad.ahk",
+    "loc": 35,
+    "total": 16,
+    "errors": 7,
+    "warnings": 9,
+    "density": 457.1428571428571,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_switchToPremiere.ahk",
+    "loc": 36,
+    "total": 22,
+    "errors": 5,
+    "warnings": 17,
+    "density": 611.1111111111112,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_switchTostreamdeck.ahk",
+    "loc": 16,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 312.5,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_switchToWord.ahk",
+    "loc": 22,
+    "total": 9,
+    "errors": 4,
+    "warnings": 5,
+    "density": 409.0909090909091,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_T.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_tab.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_tilde.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_U.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_up.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_V.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_v1a1locker.ahk",
+    "loc": 13,
+    "total": 6,
+    "errors": 4,
+    "warnings": 2,
+    "density": 461.53846153846155,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_W.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_WORD_COMMENTS.ahk",
+    "loc": 60,
+    "total": 6,
+    "errors": 2,
+    "warnings": 4,
+    "density": 100.0,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S021"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_X.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Y.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "TaranVH_2nd-keyboard_Z.ahk",
+    "loc": 2,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 2500.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "techleadhd_mackeys_keys.ahk",
+    "loc": 92,
+    "total": 4,
+    "errors": 2,
+    "warnings": 2,
+    "density": 43.47826086956522,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tex2e_AHKManager_#AHKManager.ahk",
+    "loc": 321,
+    "total": 68,
+    "errors": 63,
+    "warnings": 5,
+    "density": 211.8380062305296,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "tex2e_AHKManager_sample1.ahk",
+    "loc": 14,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 285.7142857142857,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tex2e_AHKManager_sample2.ahk",
+    "loc": 18,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 333.3333333333333,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_abdomen-ct.ahk",
+    "loc": 424,
+    "total": 22,
+    "errors": 13,
+    "warnings": 9,
+    "density": 51.88679245283019,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_abdomen-mr.ahk",
+    "loc": 25,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 160.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_active-current-image-before-submit.ahk",
+    "loc": 13,
+    "total": 11,
+    "errors": 10,
+    "warnings": 1,
+    "density": 846.1538461538462,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_ajcc-neuro.ahk",
+    "loc": 848,
+    "total": 76,
+    "errors": 15,
+    "warnings": 61,
+    "density": 89.62264150943396,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_AutoHotkey.ahk",
+    "loc": 279,
+    "total": 9,
+    "errors": 8,
+    "warnings": 1,
+    "density": 32.25806451612903,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetTitleMatchMode"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_bone-x-ray.ahk",
+    "loc": 272,
+    "total": 26,
+    "errors": 2,
+    "warnings": 24,
+    "density": 95.58823529411764,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_cgst32-related-mouse-control.ahk",
+    "loc": 41,
+    "total": 28,
+    "errors": 27,
+    "warnings": 1,
+    "density": 682.9268292682927,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_chest-ct.ahk",
+    "loc": 321,
+    "total": 15,
+    "errors": 9,
+    "warnings": 6,
+    "density": 46.72897196261682,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_click-confirm.ahk",
+    "loc": 31,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 96.77419354838709,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_click-emr.ahk",
+    "loc": 20,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 200.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_copy-order.ahk",
+    "loc": 46,
+    "total": 8,
+    "errors": 7,
+    "warnings": 1,
+    "density": 173.91304347826087,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_debug.ahk",
+    "loc": 102,
+    "total": 10,
+    "errors": 4,
+    "warnings": 6,
+    "density": 98.0392156862745,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_detect-non-ascii-chars.ahk",
+    "loc": 27,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 148.14814814814815,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_dicom-sr-ocr.ahk",
+    "loc": 184,
+    "total": 7,
+    "errors": 5,
+    "warnings": 2,
+    "density": 38.04347826086957,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_dicom-sr.ahk",
+    "loc": 385,
+    "total": 15,
+    "errors": 11,
+    "warnings": 4,
+    "density": 38.96103896103896,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_frame-wait.ahk",
+    "loc": 21,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 190.47619047619045,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_get-mesa-scale.ahk",
+    "loc": 75,
+    "total": 7,
+    "errors": 5,
+    "warnings": 2,
+    "density": 93.33333333333334,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_get-previous-exam-date.ahk",
+    "loc": 54,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 74.07407407407408,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_get-previous-report-with-images.ahk",
+    "loc": 232,
+    "total": 16,
+    "errors": 12,
+    "warnings": 4,
+    "density": 68.9655172413793,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_get-previous-report.ahk",
+    "loc": 188,
+    "total": 15,
+    "errors": 12,
+    "warnings": 3,
+    "density": 79.7872340425532,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_go-to-image.ahk",
+    "loc": 29,
+    "total": 18,
+    "errors": 17,
+    "warnings": 1,
+    "density": 620.6896551724138,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_gui-common.ahk",
+    "loc": 49,
+    "total": 9,
+    "errors": 8,
+    "warnings": 1,
+    "density": 183.67346938775512,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_Hotstrings.ahk",
+    "loc": 108,
+    "total": 137,
+    "errors": 39,
+    "warnings": 98,
+    "density": 1268.5185185185187,
+    "top_rules": [
+      "P001",
+      "W007",
+      "W008"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_HuangYL.ahk",
+    "loc": 58,
+    "total": 11,
+    "errors": 9,
+    "warnings": 2,
+    "density": 189.65517241379308,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_IEGet.ahk",
+    "loc": 14,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 285.7142857142857,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_FUNC_ComObjCreate"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_insert-patient-exam-info.ahk",
+    "loc": 21,
+    "total": 13,
+    "errors": 8,
+    "warnings": 5,
+    "density": 619.047619047619,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_JoystickAsMouse.ahk",
+    "loc": 150,
+    "total": 46,
+    "errors": 34,
+    "warnings": 12,
+    "density": 306.66666666666663,
+    "top_rules": [
+      "P001",
+      "W008",
+      "W010"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_JoystickTest.ahk",
+    "loc": 79,
+    "total": 65,
+    "errors": 63,
+    "warnings": 2,
+    "density": 822.7848101265823,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_JSON.ahk",
+    "loc": 374,
+    "total": 301,
+    "errors": 8,
+    "warnings": 293,
+    "density": 804.8128342245989,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_keystroke-counter.ahk",
+    "loc": 62,
+    "total": 6,
+    "errors": 3,
+    "warnings": 3,
+    "density": 96.77419354838709,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_libera-bmd.ahk",
+    "loc": 180,
+    "total": 11,
+    "errors": 3,
+    "warnings": 8,
+    "density": 61.11111111111111,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_LiberaBMD.ahk",
+    "loc": 80,
+    "total": 10,
+    "errors": 7,
+    "warnings": 3,
+    "density": 125.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_ms-mri.ahk",
+    "loc": 90,
+    "total": 15,
+    "errors": 6,
+    "warnings": 9,
+    "density": 166.66666666666666,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_navigation-exam-list.ahk",
+    "loc": 110,
+    "total": 6,
+    "errors": 5,
+    "warnings": 1,
+    "density": 54.54545454545454,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-ajcc.ahk",
+    "loc": 848,
+    "total": 76,
+    "errors": 15,
+    "warnings": 61,
+    "density": 89.62264150943396,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-brain.ahk",
+    "loc": 444,
+    "total": 59,
+    "errors": 10,
+    "warnings": 49,
+    "density": 132.88288288288288,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-lai.ahk",
+    "loc": 229,
+    "total": 19,
+    "errors": 8,
+    "warnings": 11,
+    "density": 82.96943231441048,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-neck.ahk",
+    "loc": 211,
+    "total": 23,
+    "errors": 6,
+    "warnings": 17,
+    "density": 109.00473933649289,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-orbital.ahk",
+    "loc": 174,
+    "total": 28,
+    "errors": 7,
+    "warnings": 21,
+    "density": 160.91954022988506,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-spine.ahk",
+    "loc": 533,
+    "total": 97,
+    "errors": 10,
+    "warnings": 87,
+    "density": 181.98874296435272,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_neuro-sr.ahk",
+    "loc": 1673,
+    "total": 101,
+    "errors": 30,
+    "warnings": 71,
+    "density": 60.37059175134489,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_open-in-osirix.ahk",
+    "loc": 62,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 80.64516129032258,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_query-prev-images-for-sonographer.ahk",
+    "loc": 45,
+    "total": 5,
+    "errors": 3,
+    "warnings": 2,
+    "density": 111.1111111111111,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_regex-hotstrings.ahk",
+    "loc": 102,
+    "total": 53,
+    "errors": 50,
+    "warnings": 3,
+    "density": 519.6078431372549,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_renumber-selected-text.ahk",
+    "loc": 106,
+    "total": 23,
+    "errors": 22,
+    "warnings": 1,
+    "density": 216.9811320754717,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_set-predefined-exam-flow.ahk",
+    "loc": 156,
+    "total": 12,
+    "errors": 9,
+    "warnings": 3,
+    "density": 76.92307692307693,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_smart-card.ahk",
+    "loc": 93,
+    "total": 9,
+    "errors": 7,
+    "warnings": 2,
+    "density": 96.77419354838709,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_smartwonder-common.ahk",
+    "loc": 20,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 150.0,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_SmartWonder-CopyPreviousRelatedReport.ahk",
+    "loc": 223,
+    "total": 20,
+    "errors": 18,
+    "warnings": 2,
+    "density": 89.68609865470852,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_SmartWonder-MesaScale.ahk",
+    "loc": 26,
+    "total": 8,
+    "errors": 7,
+    "warnings": 1,
+    "density": 307.69230769230774,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SendMode"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_SmartWonder-RenumberingSelectedLines.ahk",
+    "loc": 125,
+    "total": 28,
+    "errors": 27,
+    "warnings": 1,
+    "density": 224.0,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_sono.ahk",
+    "loc": 409,
+    "total": 40,
+    "errors": 21,
+    "warnings": 19,
+    "density": 97.799511002445,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_Sonographer.ahk",
+    "loc": 38,
+    "total": 9,
+    "errors": 8,
+    "warnings": 1,
+    "density": 236.8421052631579,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetTitleMatchMode"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_spg.ahk",
+    "loc": 397,
+    "total": 40,
+    "errors": 36,
+    "warnings": 4,
+    "density": 100.75566750629723,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_status-of-us-rct-without-image.ahk",
+    "loc": 81,
+    "total": 14,
+    "errors": 11,
+    "warnings": 3,
+    "density": 172.8395061728395,
+    "top_rules": [
+      "P001",
+      "W006",
+      "W008"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_StdOutStream.ahk",
+    "loc": 53,
+    "total": 10,
+    "errors": 9,
+    "warnings": 1,
+    "density": 188.67924528301887,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_string.ahk",
+    "loc": 22,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 136.36363636363635,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_toggle-hanging-protocol.ahk",
+    "loc": 67,
+    "total": 11,
+    "errors": 10,
+    "warnings": 1,
+    "density": 164.17910447761193,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_toggle-position-sync.ahk",
+    "loc": 11,
+    "total": 9,
+    "errors": 8,
+    "warnings": 1,
+    "density": 818.1818181818182,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_WangJJ.ahk",
+    "loc": 41,
+    "total": 10,
+    "errors": 9,
+    "warnings": 1,
+    "density": 243.90243902439025,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_SetKeyDelay"
+    ]
+  },
+  {
+    "file": "tsaiid_ahk-smartwonder_WBGet.ahk",
+    "loc": 18,
+    "total": 5,
+    "errors": 4,
+    "warnings": 1,
+    "density": 277.77777777777777,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Black.ahk",
+    "loc": 33,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 90.9090909090909,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Blue.ahk",
+    "loc": 33,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 90.9090909090909,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_End.ahk",
+    "loc": 159,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 25.157232704402517,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_KeyWait"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Environment.ahk",
+    "loc": 110,
+    "total": 28,
+    "errors": 26,
+    "warnings": 2,
+    "density": 254.54545454545453,
+    "top_rules": [
+      "P001",
+      "W001",
+      "W008"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Green.ahk",
+    "loc": 56,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 53.57142857142857,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 1.ahk",
+    "loc": 70,
+    "total": 5,
+    "errors": 2,
+    "warnings": 3,
+    "density": 71.42857142857143,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 2.ahk",
+    "loc": 73,
+    "total": 5,
+    "errors": 2,
+    "warnings": 3,
+    "density": 68.4931506849315,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 3.ahk",
+    "loc": 72,
+    "total": 6,
+    "errors": 2,
+    "warnings": 4,
+    "density": 83.33333333333333,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 4.ahk",
+    "loc": 63,
+    "total": 5,
+    "errors": 2,
+    "warnings": 3,
+    "density": 79.36507936507937,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 5.ahk",
+    "loc": 71,
+    "total": 6,
+    "errors": 2,
+    "warnings": 4,
+    "density": 84.50704225352112,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S010"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 6.ahk",
+    "loc": 89,
+    "total": 6,
+    "errors": 2,
+    "warnings": 4,
+    "density": 67.41573033707866,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S011"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 7.ahk",
+    "loc": 81,
+    "total": 7,
+    "errors": 2,
+    "warnings": 5,
+    "density": 86.41975308641975,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S011"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level 8.ahk",
+    "loc": 84,
+    "total": 7,
+    "errors": 2,
+    "warnings": 5,
+    "density": 83.33333333333333,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S011"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Level Editor.ahk",
+    "loc": 264,
+    "total": 11,
+    "errors": 4,
+    "warnings": 7,
+    "density": 41.666666666666664,
+    "top_rules": [
+      "P001",
+      "W008",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_MIDI Number Converter.ahk",
+    "loc": 522,
+    "total": 43,
+    "errors": 37,
+    "warnings": 6,
+    "density": 82.37547892720306,
+    "top_rules": [
+      "P001",
+      "W003",
+      "W008"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Music.ahk",
+    "loc": 382,
+    "total": 44,
+    "errors": 35,
+    "warnings": 9,
+    "density": 115.18324607329842,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Orange.ahk",
+    "loc": 33,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 90.9090909090909,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_ProgressEngine.ahk",
+    "loc": 799,
+    "total": 72,
+    "errors": 52,
+    "warnings": 20,
+    "density": 90.11264080100125,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_ProgressPlatformer.ahk",
+    "loc": 600,
+    "total": 14,
+    "errors": 7,
+    "warnings": 7,
+    "density": 23.333333333333336,
+    "top_rules": [
+      "P001",
+      "S005",
+      "S012"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Purple.ahk",
+    "loc": 33,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 90.9090909090909,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Red.ahk",
+    "loc": 39,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 76.92307692307693,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Title.ahk",
+    "loc": 73,
+    "total": 4,
+    "errors": 3,
+    "warnings": 1,
+    "density": 54.794520547945204,
+    "top_rules": [
+      "P001",
+      "S005",
+      "V1_KeyWait"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Tutorial.ahk",
+    "loc": 194,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 15.463917525773196,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  },
+  {
+    "file": "Uberi_ProgressPlatformer_Yellow.ahk",
+    "loc": 320,
+    "total": 3,
+    "errors": 2,
+    "warnings": 1,
+    "density": 9.375,
+    "top_rules": [
+      "P001",
+      "S005"
+    ]
+  }
+]

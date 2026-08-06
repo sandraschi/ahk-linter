@@ -5,7 +5,6 @@ Prompts several LLMs to write AHK scripts, then lints the results.
 This quantifies the real-world need for our linter.
 """
 
-import json
 import os
 import sys
 import tempfile
@@ -82,6 +81,7 @@ V1_PATTERNS = {
 def count_v1_patterns(source: str) -> dict:
     """Count all v1 syntax patterns in source code."""
     import re
+
     found = {}
     for name, pattern in V1_PATTERNS.items():
         matches = re.findall(pattern, source)
@@ -102,20 +102,24 @@ def analyze_scripts(label: str, scripts: list[tuple[str, str]]) -> dict:
         v1_found = count_v1_patterns(source)
 
         # Run linter
-        with tempfile.NamedTemporaryFile(mode="w", suffix=".ahk", delete=False, encoding="utf-8") as f:
+        with tempfile.NamedTemporaryFile(
+            mode="w", suffix=".ahk", delete=False, encoding="utf-8"
+        ) as f:
             f.write(source)
             tmp = f.name
         issues = linter.lint_file(Path(tmp))
         os.unlink(tmp)
 
         errors = [i for i in issues if i.get("severity") == "error"]
-        results.append({
-            "name": name,
-            "v1_patterns_found": v1_found,
-            "v1_pattern_count": sum(v1_found.values()),
-            "linter_issues": len(issues),
-            "linter_errors": len(errors),
-        })
+        results.append(
+            {
+                "name": name,
+                "v1_patterns_found": v1_found,
+                "v1_pattern_count": sum(v1_found.values()),
+                "linter_issues": len(issues),
+                "linter_errors": len(errors),
+            }
+        )
 
     return results
 
@@ -197,7 +201,7 @@ if __name__ == "__main__":
     print("=" * 60)
 
     all_results = []
-    for key, (name, source) in sorted(LLM_GENERATED.items()):
+    for _key, (name, source) in sorted(LLM_GENERATED.items()):
         result = analyze_scripts(name, [(name, source)])
         all_results.extend(result)
 
@@ -213,4 +217,6 @@ if __name__ == "__main__":
     print("-" * 80)
     for r in sorted(all_results, key=lambda x: -x["v1_pattern_count"]):
         top = list(r["v1_patterns_found"].keys())[:4]
-        print(f"{r['name']:25s} {r['v1_pattern_count']:8d} {r['linter_issues']:8d} {r['linter_errors']:8d}  {', '.join(top)}")
+        print(
+            f"{r['name']:25s} {r['v1_pattern_count']:8d} {r['linter_issues']:8d} {r['linter_errors']:8d}  {', '.join(top)}"
+        )

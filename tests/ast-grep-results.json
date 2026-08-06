@@ -1,0 +1,18 @@
+{
+  "tool": "ast-grep 0.44.1",
+  "date": "2026-07-07",
+  "status": "not_supported",
+  "reason": "ast-grep does not include AutoHotkey as a supported language. The tree-sitter-ahk grammar exists on GitHub (3 repositories) but is not published to npm and requires manual C++ compilation (node-gyp, Rust toolchain, platform-specific bindings). Even if compiled, the grammar targets AHK v2 syntax and would fail to parse v1 code. Additionally, ast-grep pattern matching is AST-based, so without a grammar it cannot perform structural matching — only plain-text regex, which defeats the purpose of using ast-grep over regex-based tools like ahk-lint.",
+  "attempts": [
+    "npm install -g tree-sitter-ahk → 404 (not in npm registry)",
+    "npm install -g github.com/holy-tao/tree-sitter-autohotkey → build failure (node-gyp-build missing)",
+    "ast-grep --lang ahk → 'ahk is not supported'",
+    "ast-grep run with no language → no files scanned"
+  ],
+  "implication": "Grammar-based multi-language tools like ast-grep, semgrep, and tree-sitter cannot be used for AHK code analysis without significant manual effort. For the specific task of v1-to-v2 migration linting, where the target code is by definition legacy v1 syntax that a v2 grammar cannot parse, a regex-based hybrid approach is the pragmatic choice. This validates ahk-lint's architectural decision of using PEG grammar with regex fallback.",
+  "results": {
+    "scripts_scanned": 0,
+    "scripts_skipped": 676,
+    "issues_found": 0
+  }
+}

@@ -3,7 +3,5 @@ repos:
     rev: v0.11.12
     hooks:
       - id: ruff
-        files: ^ahk_lint/
         args: [--fix]
       - id: ruff-format
-        files: ^ahk_lint/

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """Phase 4: Test linter against real v1 scripts (before migration) and v2 scripts (after)."""
 
-import os
 import sys
-import json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -23,12 +21,14 @@ def test_scripts(label: str, dir_path: Path) -> list[dict]:
             by_sev[i.get("severity", "warning")] += 1
 
         top_rules = list(dict.fromkeys(i["rule"] for i in issues))[:5]
-        results.append({
-            "file": fpath.name,
-            "total": len(issues),
-            "by_severity": by_sev,
-            "top_rules": top_rules,
-        })
+        results.append(
+            {
+                "file": fpath.name,
+                "total": len(issues),
+                "by_severity": by_sev,
+                "top_rules": top_rules,
+            }
+        )
 
         # Auto-fix
         fixed, new_content = linter.fix_file(fpath)
@@ -47,7 +47,9 @@ def test_scripts(label: str, dir_path: Path) -> list[dict]:
         e = r["by_severity"]["error"]
         w = r["by_severity"]["warning"]
         s = r["by_severity"]["suggestion"]
-        print(f"  {r['file']:40s} {r['total']:3d} issues ({e}e, {w}w, {s}s)  [{', '.join(r['top_rules'])}]")
+        print(
+            f"  {r['file']:40s} {r['total']:3d} issues ({e}e, {w}w, {s}s)  [{', '.join(r['top_rules'])}]"
+        )
     return results
 
 
@@ -83,9 +85,13 @@ if __name__ == "__main__":
     native_v2_warnings = sum(r["by_severity"]["warning"] for r in v2_results)
     fixed_v2_errors = sum(r["by_severity"]["error"] for r in v1_fixed_results)
     fixed_v2_warnings = sum(r["by_severity"]["warning"] for r in v1_fixed_results)
-    print(f"\n=== V2 FALSE POSITIVE CHECK ===")
-    print(f"  Native v2 scripts ({len(v2_results)}): {native_v2_errors} errors, {native_v2_warnings} warnings")
-    print(f"  Auto-fixed v1 scripts ({len(v1_fixed_results)}): {fixed_v2_errors} errors, {fixed_v2_warnings} warnings (expected — fixer not perfect)")
+    print("\n=== V2 FALSE POSITIVE CHECK ===")
+    print(
+        f"  Native v2 scripts ({len(v2_results)}): {native_v2_errors} errors, {native_v2_warnings} warnings"
+    )
+    print(
+        f"  Auto-fixed v1 scripts ({len(v1_fixed_results)}): {fixed_v2_errors} errors, {fixed_v2_warnings} warnings (expected — fixer not perfect)"
+    )
     if native_v2_errors == 0:
-        print(f"  Zero false positive errors on native v2 scripts confirmed.")
+        print("  Zero false positive errors on native v2 scripts confirmed.")
     print("\nDone.")
